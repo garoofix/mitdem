@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>MIT Energy Pricing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <style>
+        html {
+            font-size: 14px;
+        }
+        @media (min-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .pricing-header {
+            max-width: 700px;
+        }
+
+        .card-deck .card {
+            min-width: 220px;
+        }
+
+        .border-top { border-top: 1px solid #e5e5e5; }
+        .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+        .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+    </style>
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>LIVESTREAM = {};  // Object to handle streaming the data</script>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">MIT Energy Profit</h5>
+    <div style="margin-left:auto; margin-right:auto">Current Time:  0000-00-00</div>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Simulation Controls:</a>
+        <a href="#" class="mr-3" onclick="LIVESTREAM.rewind()" id="rewindbtn"><i class="fas fa-backward"></i></a>
+        <a href="#" onclick="LIVESTREAM.toggleOn()" id="playbtn"><i class="fas fa-play"></i></a>
+        <a href="#" class="ml-3" onclick="LIVESTREAM.fastForward()" id="forwardbtn"><i class="fas fa-forward"></i></a>
+        <span class="pl-3" id="playspeed">5 mins / sec</span>
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="row mb-3">
+        <div class="col-3">
+            Start Date:
+            <input type="text" id="startDate" value="04/01/2016">
+            </div>
+        <div class="col-3">
+            End Date:
+            <input type="text" id="endDate" value="04/07/2016">
+            </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-success" onclick="run()">View</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mb-3">
+        <div class="col-3">
+            Bid Price ($/MWh):
+            <input type="number" id="BidPrice" value="20">
+        </div>
+        <div class="col-3">
+            Bid Amount (MW):
+            <input type="number" id="BidAmount" value="1">
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-success" onclick="run()">View</button>
+        </div>
+    </div>
+</div>
+
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Graph 1</h4>
+            </div>
+            <div class="card-body">
+                <div id="drawISONEPRicesChart_Div" style="width: 100%; height: 500px;"></div>
+            </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Graph 2</h4>
+            </div>
+            <div class="card-body">
+
+            </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Graph 3</h4>
+            </div>
+            <div class="card-body">
+            <div id="Profitability_Div" style="width: 100%; height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">&copy; MIT 2017-2018</small>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- Scripts -->
+<script src="datAll.js"></script>
+<script src="mitUse.js"></script>
+<script src="general.js"></script>
+<script src="Bid.js"></script>
+
+
+
+</body>
+</html>
