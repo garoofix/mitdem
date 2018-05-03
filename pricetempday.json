@@ -1,0 +1,2536 @@
+var data=[
+ {
+   "FIELD1": 1,
+   "date": "1/1/2016",
+   "price": 43.58708333,
+   "temp": 37,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 2,
+   "date": "1/2/2016",
+   "price": 39.25,
+   "temp": 36,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 3,
+   "date": "1/3/2016",
+   "price": 37.23625,
+   "temp": 38,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 4,
+   "date": "1/4/2016",
+   "price": 54.99708333,
+   "temp": 25,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 5,
+   "date": "1/5/2016",
+   "price": 61.71791667,
+   "temp": 17,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 6,
+   "date": "1/6/2016",
+   "price": 67.24708333,
+   "temp": 33,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 7,
+   "date": "1/7/2016",
+   "price": 47.88791667,
+   "temp": 35,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 8,
+   "date": "1/8/2016",
+   "price": 36.10541667,
+   "temp": 36,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 9,
+   "date": "1/9/2016",
+   "price": 26.0625,
+   "temp": 40,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 10,
+   "date": "1/10/2016",
+   "price": 18.29916667,
+   "temp": 48,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 11,
+   "date": "1/11/2016",
+   "price": 33.44708333,
+   "temp": 38,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 12,
+   "date": "1/12/2016",
+   "price": 37.13833333,
+   "temp": 29,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 13,
+   "date": "1/13/2016",
+   "price": 39.36333333,
+   "temp": 27,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 14,
+   "date": "1/14/2016",
+   "price": 41.98916667,
+   "temp": 26,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 15,
+   "date": "1/15/2016",
+   "price": 28.19833333,
+   "temp": 34,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 16,
+   "date": "1/16/2016",
+   "price": 28.61833333,
+   "temp": 39,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 17,
+   "date": "1/17/2016",
+   "price": 31.02416667,
+   "temp": 34,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 18,
+   "date": "1/18/2016",
+   "price": 40.66666667,
+   "temp": 24,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 19,
+   "date": "1/19/2016",
+   "price": 46.14916667,
+   "temp": 21,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 20,
+   "date": "1/20/2016",
+   "price": 42.10125,
+   "temp": 26,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 21,
+   "date": "1/21/2016",
+   "price": 46.61791667,
+   "temp": 27,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 22,
+   "date": "1/22/2016",
+   "price": 39.28666667,
+   "temp": 26,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 23,
+   "date": "1/23/2016",
+   "price": 47.36208333,
+   "temp": 26,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 24,
+   "date": "1/24/2016",
+   "price": 39.77791667,
+   "temp": 27,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 25,
+   "date": "1/25/2016",
+   "price": 44.32375,
+   "temp": 31,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 26,
+   "date": "1/26/2016",
+   "price": 37.73291667,
+   "temp": 40,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 27,
+   "date": "1/27/2016",
+   "price": 31.71541667,
+   "temp": 38,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 28,
+   "date": "1/28/2016",
+   "price": 30.93625,
+   "temp": 34,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 29,
+   "date": "1/29/2016",
+   "price": 29.45125,
+   "temp": 37,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 30,
+   "date": "1/30/2016",
+   "price": 24.34541667,
+   "temp": 37,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 31,
+   "date": "1/31/2016",
+   "price": 21.38375,
+   "temp": 48,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 32,
+   "date": "2/1/2016",
+   "price": 17.695,
+   "temp": 52,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 33,
+   "date": "2/2/2016",
+   "price": 20.89333333,
+   "temp": 43,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 34,
+   "date": "2/3/2016",
+   "price": 18.65208333,
+   "temp": 46,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 35,
+   "date": "2/4/2016",
+   "price": 16.29166667,
+   "temp": 50,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 36,
+   "date": "2/5/2016",
+   "price": 27.72916667,
+   "temp": 34,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 37,
+   "date": "2/6/2016",
+   "price": 28.34791667,
+   "temp": 30,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 38,
+   "date": "2/7/2016",
+   "price": 26.17875,
+   "temp": 37,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 39,
+   "date": "2/8/2016",
+   "price": 31.23541667,
+   "temp": 28,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 40,
+   "date": "2/9/2016",
+   "price": 39.19625,
+   "temp": 25,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 41,
+   "date": "2/10/2016",
+   "price": 41.26458333,
+   "temp": 28,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 42,
+   "date": "2/11/2016",
+   "price": 39.16416667,
+   "temp": 21,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 43,
+   "date": "2/12/2016",
+   "price": 48.84291667,
+   "temp": 16,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 44,
+   "date": "2/13/2016",
+   "price": 47.26791667,
+   "temp": 10,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 45,
+   "date": "2/14/2016",
+   "price": 56.69666667,
+   "temp": 2,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 46,
+   "date": "2/15/2016",
+   "price": 50.46125,
+   "temp": 20,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 47,
+   "date": "2/16/2016",
+   "price": 45.21125,
+   "temp": 43,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 48,
+   "date": "2/17/2016",
+   "price": 32.24541667,
+   "temp": 40,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 49,
+   "date": "2/18/2016",
+   "price": 30.97708333,
+   "temp": 30,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 50,
+   "date": "2/19/2016",
+   "price": 27.105,
+   "temp": 29,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 51,
+   "date": "2/20/2016",
+   "price": 17.93291667,
+   "temp": 47,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 52,
+   "date": "2/21/2016",
+   "price": 14.81666667,
+   "temp": 48,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 53,
+   "date": "2/22/2016",
+   "price": 21.96958333,
+   "temp": 37,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 54,
+   "date": "2/23/2016",
+   "price": 26.0075,
+   "temp": 33,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 55,
+   "date": "2/24/2016",
+   "price": 17.39708333,
+   "temp": 48,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 56,
+   "date": "2/25/2016",
+   "price": 18.28583333,
+   "temp": 52,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 57,
+   "date": "2/26/2016",
+   "price": 24.09,
+   "temp": 34,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 58,
+   "date": "2/27/2016",
+   "price": 22.16916667,
+   "temp": 30,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 59,
+   "date": "2/28/2016",
+   "price": 14.39458333,
+   "temp": 47,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 60,
+   "date": "2/29/2016",
+   "price": 18.30916667,
+   "temp": 54,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 61,
+   "date": "3/1/2016",
+   "price": 15.33166667,
+   "temp": 42,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 62,
+   "date": "3/2/2016",
+   "price": 25.94041667,
+   "temp": 39,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 63,
+   "date": "3/3/2016",
+   "price": 35.80083333,
+   "temp": 28,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 64,
+   "date": "3/4/2016",
+   "price": 34.65375,
+   "temp": 29,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 65,
+   "date": "3/5/2016",
+   "price": 28.2075,
+   "temp": 29,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 66,
+   "date": "3/6/2016",
+   "price": 25.45208333,
+   "temp": 36,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 67,
+   "date": "3/7/2016",
+   "price": 20.9175,
+   "temp": 41,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 68,
+   "date": "3/8/2016",
+   "price": 17.48875,
+   "temp": 42,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 69,
+   "date": "3/9/2016",
+   "price": 14.35833333,
+   "temp": 59,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 70,
+   "date": "3/10/2016",
+   "price": 15.09708333,
+   "temp": 57,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 71,
+   "date": "3/11/2016",
+   "price": 15.1225,
+   "temp": 46,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 72,
+   "date": "3/12/2016",
+   "price": 14.20625,
+   "temp": 48,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 73,
+   "date": "3/13/2016",
+   "price": 16.75434783,
+   "temp": 54,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 74,
+   "date": "3/14/2016",
+   "price": 15.39666667,
+   "temp": 42,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 75,
+   "date": "3/15/2016",
+   "price": 18.18708333,
+   "temp": 43,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 76,
+   "date": "3/16/2016",
+   "price": 20.00916667,
+   "temp": 45,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 77,
+   "date": "3/17/2016",
+   "price": 17.42625,
+   "temp": 54,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 78,
+   "date": "3/18/2016",
+   "price": 18.86916667,
+   "temp": 44,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 79,
+   "date": "3/19/2016",
+   "price": 24.22458333,
+   "temp": 37,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 80,
+   "date": "3/20/2016",
+   "price": 25.71833333,
+   "temp": 31,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 81,
+   "date": "3/21/2016",
+   "price": 30.2025,
+   "temp": 36,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 82,
+   "date": "3/22/2016",
+   "price": 23.73583333,
+   "temp": 41,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 83,
+   "date": "3/23/2016",
+   "price": 18.45166667,
+   "temp": 53,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 84,
+   "date": "3/24/2016",
+   "price": 18.68291667,
+   "temp": 40,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 85,
+   "date": "3/25/2016",
+   "price": 16.39833333,
+   "temp": 42,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 86,
+   "date": "3/26/2016",
+   "price": 15.70625,
+   "temp": 39,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 87,
+   "date": "3/27/2016",
+   "price": 18.05541667,
+   "temp": 38,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 88,
+   "date": "3/28/2016",
+   "price": 20.73083333,
+   "temp": 43,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 89,
+   "date": "3/29/2016",
+   "price": 21.25708333,
+   "temp": 45,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 90,
+   "date": "3/31/2016",
+   "price": 17.08833333,
+   "temp": 51,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 91,
+   "date": "4/1/2016",
+   "price": 17.19375,
+   "temp": 36,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 92,
+   "date": "4/3/2016",
+   "price": 24.71166667,
+   "temp": 30,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 93,
+   "date": "4/4/2016",
+   "price": 38.57541667,
+   "temp": 34,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 94,
+   "date": "4/5/2016",
+   "price": 47.94333333,
+   "temp": 50,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 95,
+   "date": "4/6/2016",
+   "price": 50.16666667,
+   "temp": 45,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 96,
+   "date": "4/7/2016",
+   "price": 28.71791667,
+   "temp": 39,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 97,
+   "date": "4/8/2016",
+   "price": 29.59666667,
+   "temp": 40,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 98,
+   "date": "4/9/2016",
+   "price": 30.83583333,
+   "temp": 51,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 99,
+   "date": "4/10/2016",
+   "price": 33.13833333,
+   "temp": 52,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 100,
+   "date": "4/11/2016",
+   "price": 30.835,
+   "temp": 44,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 101,
+   "date": "4/12/2016",
+   "price": 23.56,
+   "temp": 44,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 102,
+   "date": "4/13/2016",
+   "price": 34.44583333,
+   "temp": 46,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 103,
+   "date": "4/14/2016",
+   "price": 28.33041667,
+   "temp": 48,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 104,
+   "date": "4/15/2016",
+   "price": 26.14,
+   "temp": 47,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 105,
+   "date": "4/16/2016",
+   "price": 25.54,
+   "temp": 55,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 106,
+   "date": "4/17/2016",
+   "price": 24.5575,
+   "temp": 49,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 107,
+   "date": "4/18/2016",
+   "price": 30.99583333,
+   "temp": 48,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 108,
+   "date": "4/19/2016",
+   "price": 26.93541667,
+   "temp": 60,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 109,
+   "date": "4/20/2016",
+   "price": 25.21375,
+   "temp": 68,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 110,
+   "date": "4/21/2016",
+   "price": 24.31375,
+   "temp": 56,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 111,
+   "date": "4/22/2016",
+   "price": 24.45875,
+   "temp": 46,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 112,
+   "date": "4/23/2016",
+   "price": 22.76875,
+   "temp": 51,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 113,
+   "date": "4/24/2016",
+   "price": 22.38,
+   "temp": 44,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 114,
+   "date": "4/25/2016",
+   "price": 25.30208333,
+   "temp": 50,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 115,
+   "date": "4/26/2016",
+   "price": 31.95875,
+   "temp": 48,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 116,
+   "date": "4/27/2016",
+   "price": 31.6625,
+   "temp": 55,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 117,
+   "date": "4/28/2016",
+   "price": 28.88583333,
+   "temp": 49,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 118,
+   "date": "4/29/2016",
+   "price": 23.70125,
+   "temp": 48,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 119,
+   "date": "4/30/2016",
+   "price": 20.52375,
+   "temp": 60,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 120,
+   "date": "5/1/2016",
+   "price": 21.43333333,
+   "temp": 48,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 121,
+   "date": "5/2/2016",
+   "price": 26.75625,
+   "temp": 47,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 122,
+   "date": "5/3/2016",
+   "price": 25.62625,
+   "temp": 47,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 123,
+   "date": "5/4/2016",
+   "price": 28.03708333,
+   "temp": 47,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 124,
+   "date": "5/5/2016",
+   "price": 26.58416667,
+   "temp": 46,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 125,
+   "date": "5/6/2016",
+   "price": 24.52583333,
+   "temp": 50,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 126,
+   "date": "5/7/2016",
+   "price": 21.5375,
+   "temp": 49,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 127,
+   "date": "5/8/2016",
+   "price": 19.3075,
+   "temp": 55,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 128,
+   "date": "5/9/2016",
+   "price": 21.93375,
+   "temp": 56,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 129,
+   "date": "5/10/2016",
+   "price": 20.74625,
+   "temp": 59,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 130,
+   "date": "5/11/2016",
+   "price": 17.11041667,
+   "temp": 61,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 131,
+   "date": "5/12/2016",
+   "price": 19.035,
+   "temp": 60,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 132,
+   "date": "5/13/2016",
+   "price": 22.465,
+   "temp": 63,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 133,
+   "date": "5/14/2016",
+   "price": 19.00166667,
+   "temp": 68,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 134,
+   "date": "5/15/2016",
+   "price": 15.87958333,
+   "temp": 53,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 135,
+   "date": "5/16/2016",
+   "price": 25.58416667,
+   "temp": 51,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 136,
+   "date": "5/17/2016",
+   "price": 20.8625,
+   "temp": 60,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 137,
+   "date": "5/18/2016",
+   "price": 19.15166667,
+   "temp": 54,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 138,
+   "date": "5/19/2016",
+   "price": 18.29125,
+   "temp": 55,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 139,
+   "date": "5/22/2016",
+   "price": 12.77541667,
+   "temp": 57,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 140,
+   "date": "5/23/2016",
+   "price": 15.69708333,
+   "temp": 62,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 141,
+   "date": "5/24/2016",
+   "price": 20.08375,
+   "temp": 56,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 142,
+   "date": "5/25/2016",
+   "price": 22.34875,
+   "temp": 71,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 143,
+   "date": "5/26/2016",
+   "price": 22.05,
+   "temp": 69,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 144,
+   "date": "5/27/2016",
+   "price": 23.64625,
+   "temp": 66,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 145,
+   "date": "5/28/2016",
+   "price": 29.03416667,
+   "temp": 80,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 146,
+   "date": "5/29/2016",
+   "price": 20.9975,
+   "temp": 65,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 147,
+   "date": "5/30/2016",
+   "price": 18.50375,
+   "temp": 64,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 148,
+   "date": "5/31/2016",
+   "price": 24.32375,
+   "temp": 78,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 149,
+   "date": "6/1/2016",
+   "price": 17.90458333,
+   "temp": 65,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 150,
+   "date": "6/2/2016",
+   "price": 19.555,
+   "temp": 59,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 151,
+   "date": "6/3/2016",
+   "price": 21.87458333,
+   "temp": 64,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 152,
+   "date": "6/4/2016",
+   "price": 20.15166667,
+   "temp": 66,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 153,
+   "date": "6/5/2016",
+   "price": 16.50625,
+   "temp": 64,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 154,
+   "date": "6/6/2016",
+   "price": 21.12166667,
+   "temp": 75,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 155,
+   "date": "6/7/2016",
+   "price": 21.62208333,
+   "temp": 75,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 156,
+   "date": "6/8/2016",
+   "price": 17.87083333,
+   "temp": 66,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 157,
+   "date": "6/9/2016",
+   "price": 15.60458333,
+   "temp": 62,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 158,
+   "date": "6/10/2016",
+   "price": 14.46291667,
+   "temp": 64,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 159,
+   "date": "6/11/2016",
+   "price": 15.0225,
+   "temp": 61,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 160,
+   "date": "6/12/2016",
+   "price": 19.14041667,
+   "temp": 68,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 161,
+   "date": "6/13/2016",
+   "price": 19.36208333,
+   "temp": 64,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 162,
+   "date": "6/14/2016",
+   "price": 20.58083333,
+   "temp": 67,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 163,
+   "date": "6/15/2016",
+   "price": 24.24333333,
+   "temp": 76,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 164,
+   "date": "6/16/2016",
+   "price": 24.27833333,
+   "temp": 69,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 165,
+   "date": "6/17/2016",
+   "price": 22.0175,
+   "temp": 67,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 166,
+   "date": "6/18/2016",
+   "price": 22.16541667,
+   "temp": 66,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 167,
+   "date": "6/19/2016",
+   "price": 22.43666667,
+   "temp": 70,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 168,
+   "date": "6/20/2016",
+   "price": 29.01083333,
+   "temp": 72,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 169,
+   "date": "6/21/2016",
+   "price": 37.08583333,
+   "temp": 76,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 170,
+   "date": "6/22/2016",
+   "price": 29.04083333,
+   "temp": 71,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 171,
+   "date": "6/23/2016",
+   "price": 25.70583333,
+   "temp": 69,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 172,
+   "date": "6/24/2016",
+   "price": 24.11041667,
+   "temp": 67,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 173,
+   "date": "6/25/2016",
+   "price": 21.52458333,
+   "temp": 66,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 174,
+   "date": "6/26/2016",
+   "price": 24.70625,
+   "temp": 72,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 175,
+   "date": "6/27/2016",
+   "price": 28.6225,
+   "temp": 75,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 176,
+   "date": "6/28/2016",
+   "price": 27.76625,
+   "temp": 74,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 177,
+   "date": "6/29/2016",
+   "price": 33.2425,
+   "temp": 77,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 178,
+   "date": "6/30/2016",
+   "price": 30.95916667,
+   "temp": 75,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 179,
+   "date": "7/1/2016",
+   "price": 30.56875,
+   "temp": 77,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 180,
+   "date": "7/2/2016",
+   "price": 22.22958333,
+   "temp": 73,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 181,
+   "date": "7/3/2016",
+   "price": 17.95291667,
+   "temp": 74,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 182,
+   "date": "7/4/2016",
+   "price": 19.20916667,
+   "temp": 77,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 183,
+   "date": "7/5/2016",
+   "price": 30.22291667,
+   "temp": 70,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 184,
+   "date": "7/6/2016",
+   "price": 48.31291667,
+   "temp": 83,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 185,
+   "date": "7/7/2016",
+   "price": 46.4025,
+   "temp": 70,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 186,
+   "date": "7/8/2016",
+   "price": 38.68041667,
+   "temp": 64,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 187,
+   "date": "7/9/2016",
+   "price": 21.15375,
+   "temp": 62,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 188,
+   "date": "7/10/2016",
+   "price": 15.16541667,
+   "temp": 62,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 189,
+   "date": "7/11/2016",
+   "price": 23.79125,
+   "temp": 66,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 190,
+   "date": "7/12/2016",
+   "price": 28.99333333,
+   "temp": 77,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 191,
+   "date": "7/13/2016",
+   "price": 32.76,
+   "temp": 79,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 192,
+   "date": "7/14/2016",
+   "price": 31.37291667,
+   "temp": 78,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 193,
+   "date": "7/15/2016",
+   "price": 44.24125,
+   "temp": 84,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 194,
+   "date": "7/16/2016",
+   "price": 26.27208333,
+   "temp": 85,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 195,
+   "date": "7/17/2016",
+   "price": 22.46625,
+   "temp": 74,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 196,
+   "date": "7/18/2016",
+   "price": 34.48583333,
+   "temp": 81,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 197,
+   "date": "7/19/2016",
+   "price": 29.7675,
+   "temp": 76,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 198,
+   "date": "7/20/2016",
+   "price": 24.62458333,
+   "temp": 75,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 199,
+   "date": "7/21/2016",
+   "price": 28.22666667,
+   "temp": 79,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 200,
+   "date": "7/22/2016",
+   "price": 38.485,
+   "temp": 86,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 201,
+   "date": "7/23/2016",
+   "price": 35.84916667,
+   "temp": 83,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 202,
+   "date": "7/24/2016",
+   "price": 31.05041667,
+   "temp": 80,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 203,
+   "date": "7/25/2016",
+   "price": 48.05625,
+   "temp": 80,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 204,
+   "date": "7/26/2016",
+   "price": 48.06416667,
+   "temp": 85,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 205,
+   "date": "7/27/2016",
+   "price": 39.94916667,
+   "temp": 80,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 206,
+   "date": "7/28/2016",
+   "price": 39.83541667,
+   "temp": 81,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 207,
+   "date": "7/29/2016",
+   "price": 28.89958333,
+   "temp": 76,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 208,
+   "date": "7/30/2016",
+   "price": 29.125,
+   "temp": 76,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 209,
+   "date": "7/31/2016",
+   "price": 22.03291667,
+   "temp": 71,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 210,
+   "date": "8/1/2016",
+   "price": 31.08125,
+   "temp": 72,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 211,
+   "date": "8/2/2016",
+   "price": 27.84458333,
+   "temp": 70,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 212,
+   "date": "8/3/2016",
+   "price": 28.62416667,
+   "temp": 71,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 213,
+   "date": "8/4/2016",
+   "price": 27.11958333,
+   "temp": 73,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 214,
+   "date": "8/5/2016",
+   "price": 28.7625,
+   "temp": 77,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 215,
+   "date": "8/6/2016",
+   "price": 31.92833333,
+   "temp": 80,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 216,
+   "date": "8/7/2016",
+   "price": 26.00833333,
+   "temp": 81,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 217,
+   "date": "8/8/2016",
+   "price": 33.17875,
+   "temp": 76,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 218,
+   "date": "8/9/2016",
+   "price": 35.43666667,
+   "temp": 77,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 219,
+   "date": "8/10/2016",
+   "price": 36.11208333,
+   "temp": 74,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 220,
+   "date": "8/11/2016",
+   "price": 53.95666667,
+   "temp": 86,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 221,
+   "date": "8/12/2016",
+   "price": 57.24333333,
+   "temp": 88,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 222,
+   "date": "8/13/2016",
+   "price": 44.96708333,
+   "temp": 75,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 223,
+   "date": "8/14/2016",
+   "price": 50.59458333,
+   "temp": 83,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 224,
+   "date": "8/15/2016",
+   "price": 50.5125,
+   "temp": 82,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 225,
+   "date": "8/16/2016",
+   "price": 63.66541667,
+   "temp": 75,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 226,
+   "date": "8/17/2016",
+   "price": 45.38916667,
+   "temp": 79,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 227,
+   "date": "8/18/2016",
+   "price": 37.11125,
+   "temp": 80,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 228,
+   "date": "8/19/2016",
+   "price": 33.9575,
+   "temp": 74,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 229,
+   "date": "8/20/2016",
+   "price": 28.65416667,
+   "temp": 76,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 230,
+   "date": "8/21/2016",
+   "price": 25.21875,
+   "temp": 72,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 231,
+   "date": "8/22/2016",
+   "price": 27.01791667,
+   "temp": 73,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 232,
+   "date": "8/23/2016",
+   "price": 24.67541667,
+   "temp": 72,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 233,
+   "date": "8/24/2016",
+   "price": 28.4475,
+   "temp": 77,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 234,
+   "date": "8/25/2016",
+   "price": 29.6375,
+   "temp": 78,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 235,
+   "date": "8/26/2016",
+   "price": 42.51166667,
+   "temp": 82,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 236,
+   "date": "8/27/2016",
+   "price": 29.04333333,
+   "temp": 76,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 237,
+   "date": "8/28/2016",
+   "price": 23.82208333,
+   "temp": 72,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 238,
+   "date": "8/29/2016",
+   "price": 38.23625,
+   "temp": 80,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 239,
+   "date": "8/30/2016",
+   "price": 28.39875,
+   "temp": 71,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 240,
+   "date": "8/31/2016",
+   "price": 30.1575,
+   "temp": 75,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 241,
+   "date": "9/1/2016",
+   "price": 28.83125,
+   "temp": 72,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 242,
+   "date": "9/2/2016",
+   "price": 22.31375,
+   "temp": 70,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 243,
+   "date": "9/3/2016",
+   "price": 18.62416667,
+   "temp": 65,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 244,
+   "date": "9/4/2016",
+   "price": 14.94666667,
+   "temp": 66,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 245,
+   "date": "9/5/2016",
+   "price": 17.80125,
+   "temp": 67,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 246,
+   "date": "9/6/2016",
+   "price": 44.75041667,
+   "temp": 68,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 247,
+   "date": "9/7/2016",
+   "price": 50.78916667,
+   "temp": 71,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 248,
+   "date": "9/8/2016",
+   "price": 61.70625,
+   "temp": 71,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 249,
+   "date": "9/9/2016",
+   "price": 66.69083333,
+   "temp": 83,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 250,
+   "date": "9/10/2016",
+   "price": 59.34333333,
+   "temp": 74,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 251,
+   "date": "9/11/2016",
+   "price": 48.39166667,
+   "temp": 73,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 252,
+   "date": "9/12/2016",
+   "price": 43.38083333,
+   "temp": 66,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 253,
+   "date": "9/13/2016",
+   "price": 29.68625,
+   "temp": 72,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 254,
+   "date": "9/14/2016",
+   "price": 38.57458333,
+   "temp": 76,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 255,
+   "date": "9/15/2016",
+   "price": 32.62083333,
+   "temp": 62,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 256,
+   "date": "9/16/2016",
+   "price": 28.75041667,
+   "temp": 62,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 257,
+   "date": "9/17/2016",
+   "price": 37.55666667,
+   "temp": 67,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 258,
+   "date": "9/18/2016",
+   "price": 38.64583333,
+   "temp": 74,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 259,
+   "date": "9/19/2016",
+   "price": 38.6075,
+   "temp": 71,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 260,
+   "date": "9/20/2016",
+   "price": 46.23083333,
+   "temp": 71,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 261,
+   "date": "9/21/2016",
+   "price": 39.7675,
+   "temp": 76,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 262,
+   "date": "9/22/2016",
+   "price": 33.73833333,
+   "temp": 70,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 263,
+   "date": "9/23/2016",
+   "price": 34.87083333,
+   "temp": 69,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 264,
+   "date": "9/24/2016",
+   "price": 18.10791667,
+   "temp": 61,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 265,
+   "date": "9/25/2016",
+   "price": 14.25791667,
+   "temp": 58,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 266,
+   "date": "9/26/2016",
+   "price": 21.15833333,
+   "temp": 56,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 267,
+   "date": "9/27/2016",
+   "price": 23.99666667,
+   "temp": 66,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 268,
+   "date": "9/28/2016",
+   "price": 23.56833333,
+   "temp": 59,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 269,
+   "date": "9/29/2016",
+   "price": 31.53208333,
+   "temp": 57,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 270,
+   "date": "9/30/2016",
+   "price": 28.15791667,
+   "temp": 59,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 271,
+   "date": "10/1/2016",
+   "price": 17.70291667,
+   "temp": 57,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 272,
+   "date": "10/2/2016",
+   "price": 15.32791667,
+   "temp": 55,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 273,
+   "date": "10/3/2016",
+   "price": 18.69416667,
+   "temp": 62,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 274,
+   "date": "10/4/2016",
+   "price": 28.88708333,
+   "temp": 57,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 275,
+   "date": "10/5/2016",
+   "price": 20.34708333,
+   "temp": 54,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 276,
+   "date": "10/6/2016",
+   "price": 23.83083333,
+   "temp": 58,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 277,
+   "date": "10/7/2016",
+   "price": 22.38666667,
+   "temp": 61,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 278,
+   "date": "10/8/2016",
+   "price": 15.43166667,
+   "temp": 60,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 279,
+   "date": "10/9/2016",
+   "price": 11.06333333,
+   "temp": 57,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 280,
+   "date": "10/10/2016",
+   "price": 12.69791667,
+   "temp": 52,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 281,
+   "date": "10/11/2016",
+   "price": 19.83458333,
+   "temp": 52,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 282,
+   "date": "10/12/2016",
+   "price": 24.63083333,
+   "temp": 55,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 283,
+   "date": "10/13/2016",
+   "price": 23.55291667,
+   "temp": 62,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 284,
+   "date": "10/14/2016",
+   "price": 23.745,
+   "temp": 53,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 285,
+   "date": "10/15/2016",
+   "price": 23.47791667,
+   "temp": 49,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 286,
+   "date": "10/16/2016",
+   "price": 15.85375,
+   "temp": 59,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 287,
+   "date": "10/17/2016",
+   "price": 26.30166667,
+   "temp": 69,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 288,
+   "date": "10/18/2016",
+   "price": 27.99,
+   "temp": 63,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 289,
+   "date": "10/19/2016",
+   "price": 53.59208333,
+   "temp": 72,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 290,
+   "date": "10/20/2016",
+   "price": 28.25541667,
+   "temp": 59,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 291,
+   "date": "10/21/2016",
+   "price": 22.03125,
+   "temp": 67,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 292,
+   "date": "10/22/2016",
+   "price": 19.71125,
+   "temp": 55,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 293,
+   "date": "10/23/2016",
+   "price": 19.1275,
+   "temp": 51,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 294,
+   "date": "10/24/2016",
+   "price": 21.8675,
+   "temp": 54,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 295,
+   "date": "10/25/2016",
+   "price": 32.925,
+   "temp": 44,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 296,
+   "date": "10/26/2016",
+   "price": 29.17625,
+   "temp": 43,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 297,
+   "date": "10/27/2016",
+   "price": 32.415,
+   "temp": 42,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 298,
+   "date": "10/28/2016",
+   "price": 27.25958333,
+   "temp": 50,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 299,
+   "date": "10/29/2016",
+   "price": 28.41,
+   "temp": 50,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 300,
+   "date": "10/30/2016",
+   "price": 23.54708333,
+   "temp": 56,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 301,
+   "date": "10/31/2016",
+   "price": 55.72333333,
+   "temp": 45,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 302,
+   "date": "11/1/2016",
+   "price": 31.49375,
+   "temp": 43,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 303,
+   "date": "11/2/2016",
+   "price": 23.775,
+   "temp": 58,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 304,
+   "date": "11/3/2016",
+   "price": 22.66916667,
+   "temp": 58,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 305,
+   "date": "11/4/2016",
+   "price": 19.85791667,
+   "temp": 48,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 306,
+   "date": "11/5/2016",
+   "price": 19.67833333,
+   "temp": 46,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 307,
+   "date": "11/6/2016",
+   "price": 16.9736,
+   "temp": 48,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 308,
+   "date": "11/7/2016",
+   "price": 25.32416667,
+   "temp": 42,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 309,
+   "date": "11/8/2016",
+   "price": 23.71125,
+   "temp": 49,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 310,
+   "date": "11/9/2016",
+   "price": 22.95625,
+   "temp": 53,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 311,
+   "date": "11/10/2016",
+   "price": 26.36875,
+   "temp": 46,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 312,
+   "date": "11/11/2016",
+   "price": 22.98583333,
+   "temp": 49,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 313,
+   "date": "11/12/2016",
+   "price": 21.24583333,
+   "temp": 41,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 314,
+   "date": "11/13/2016",
+   "price": 18.7575,
+   "temp": 51,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 315,
+   "date": "11/14/2016",
+   "price": 22.75458333,
+   "temp": 53,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 316,
+   "date": "11/15/2016",
+   "price": 24.53333333,
+   "temp": 52,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 317,
+   "date": "11/16/2016",
+   "price": 26.12791667,
+   "temp": 53,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 318,
+   "date": "11/17/2016",
+   "price": 23.47833333,
+   "temp": 51,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 319,
+   "date": "11/18/2016",
+   "price": 21.21041667,
+   "temp": 53,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 320,
+   "date": "11/19/2016",
+   "price": 19.64875,
+   "temp": 47,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 321,
+   "date": "11/20/2016",
+   "price": 20.765,
+   "temp": 41,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 322,
+   "date": "11/21/2016",
+   "price": 29.03166667,
+   "temp": 34,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 323,
+   "date": "11/22/2016",
+   "price": 35.31666667,
+   "temp": 38,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 324,
+   "date": "11/23/2016",
+   "price": 32.51791667,
+   "temp": 39,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 325,
+   "date": "11/24/2016",
+   "price": 26.8825,
+   "temp": 39,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 326,
+   "date": "11/25/2016",
+   "price": 28.41833333,
+   "temp": 44,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 327,
+   "date": "11/26/2016",
+   "price": 29.45125,
+   "temp": 43,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 328,
+   "date": "11/27/2016",
+   "price": 28.57458333,
+   "temp": 41,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 329,
+   "date": "11/28/2016",
+   "price": 41.80291667,
+   "temp": 40,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 330,
+   "date": "11/29/2016",
+   "price": 36.615,
+   "temp": 46,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 331,
+   "date": "11/30/2016",
+   "price": 35.74916667,
+   "temp": 47,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 332,
+   "date": "12/1/2016",
+   "price": 22.89916667,
+   "temp": 50,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 333,
+   "date": "12/2/2016",
+   "price": 24.76583333,
+   "temp": 45,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 334,
+   "date": "12/3/2016",
+   "price": 30.88208333,
+   "temp": 40,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 335,
+   "date": "12/4/2016",
+   "price": 39.70916667,
+   "temp": 37,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 336,
+   "date": "12/5/2016",
+   "price": 53.76541667,
+   "temp": 36,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 337,
+   "date": "12/6/2016",
+   "price": 45.93333333,
+   "temp": 39,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 338,
+   "date": "12/7/2016",
+   "price": 39.91,
+   "temp": 39,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 339,
+   "date": "12/8/2016",
+   "price": 46.33791667,
+   "temp": 39,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 340,
+   "date": "12/9/2016",
+   "price": 69.18583333,
+   "temp": 31,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 341,
+   "date": "12/10/2016",
+   "price": 66.11916667,
+   "temp": 25,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 342,
+   "date": "12/11/2016",
+   "price": 60.03583333,
+   "temp": 28,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 343,
+   "date": "12/12/2016",
+   "price": 65.03875,
+   "temp": 37,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 344,
+   "date": "12/13/2016",
+   "price": 52.64083333,
+   "temp": 39,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 345,
+   "date": "12/14/2016",
+   "price": 60.19958333,
+   "temp": 35,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 346,
+   "date": "12/15/2016",
+   "price": 88.85,
+   "temp": 23,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 347,
+   "date": "12/16/2016",
+   "price": 96.81166667,
+   "temp": 12,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 348,
+   "date": "12/17/2016",
+   "price": 65.85,
+   "temp": 29,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 349,
+   "date": "12/18/2016",
+   "price": 40.91583333,
+   "temp": 45,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 350,
+   "date": "12/19/2016",
+   "price": 77.81375,
+   "temp": 26,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 351,
+   "date": "12/20/2016",
+   "price": 72.43125,
+   "temp": 26,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 352,
+   "date": "12/21/2016",
+   "price": 60.95958333,
+   "temp": 37,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 353,
+   "date": "12/22/2016",
+   "price": 67.50791667,
+   "temp": 35,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 354,
+   "date": "12/23/2016",
+   "price": 57.15208333,
+   "temp": 41,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 355,
+   "date": "12/24/2016",
+   "price": 37.86708333,
+   "temp": 40,
+   "day": "Saturday"
+ },
+ {
+   "FIELD1": 356,
+   "date": "12/25/2016",
+   "price": 35.97208333,
+   "temp": 36,
+   "day": "Sunday"
+ },
+ {
+   "FIELD1": 357,
+   "date": "12/26/2016",
+   "price": 40.77291667,
+   "temp": 36,
+   "day": "Monday"
+ },
+ {
+   "FIELD1": 358,
+   "date": "12/27/2016",
+   "price": 40.01125,
+   "temp": 49,
+   "day": "Tuesday"
+ },
+ {
+   "FIELD1": 359,
+   "date": "12/28/2016",
+   "price": 47.97666667,
+   "temp": 37,
+   "day": "Wednesday"
+ },
+ {
+   "FIELD1": 360,
+   "date": "12/29/2016",
+   "price": 46.89666667,
+   "temp": 36,
+   "day": "Thursday"
+ },
+ {
+   "FIELD1": 361,
+   "date": "12/30/2016",
+   "price": 41.70083333,
+   "temp": 36,
+   "day": "Friday"
+ },
+ {
+   "FIELD1": 362,
+   "date": "12/31/2016",
+   "price": 45.7675,
+   "temp": 34,
+   "day": "Saturday"
+ }
+]

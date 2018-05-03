@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="datAll.js"></script>
+        <script src="Bid.js"></script>
+        <script src="mitUse.js"></script>
+    
+</head>
+<title>1.001 Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>1.001 Final Project</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT</a>     
+    <a href="#data" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DATA ANALYSIS</a> 
+    <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DASHBOARD</a> 
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TEAM</a> 
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Save Energy Make Money</b></h1>
+  </div>
+  
+  <img src="powerplantImage.jpg" alt="plant" style="width:100%">
+
+<!-- About -->
+<div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>About</b></h1>
+    <p>
+        MIT looks to reduce campus greenhouse gas emissions by at least 32% of 2014 levels by 2030.  If MIT continues to purchase significant quantities of electricity from the grid, it may be challenging to incentivize the actions necessary to achieve these ambitious climate goals.
+    </p>
+    <p>
+        However, MIT could get paid for reducing its electricity consumption.
+        Smaller consumers write a check to an electric utility.  However, in Massachusetts, these utilities are not generating power. They buy power in a large auction. In this auction, overseen by an  “Independent System Operator (ISO),” utilities say “I am willing to pay $X for Y amount of power,” and for generators to offer “$A for providing B amount of power.” The ISO makes sure that the cheapest power is procured, while ensuring the transmission lines are safe.
+    </p>
+    <p>
+        Only a third of the energy embedded in fossil fuel ends up consumed. It can be a lot cheaper for people not to use energy in the first place. Demand response refers to end-use consumers using less energy. Demand response can be considered a resource similar to a generator - using less energy is like making more energy. In these ISO markets, demand response resources can bid in like generators. Demand response resources can say “I would like to be paid $J for not using K amount of energy.” If cost-effective, the ISO will ask demand response resources to use less energy, replacing a generator from producing more energy.
+    </p> 
+    <p>
+        MIT could be a demand response resource in New England’s ISO. In other words, MIT could make money by reducing its electricity consumption. However, this theoretical idea may not align with the reality: could MIT make money from participating as a demand response resource? If so, how much money? Our project looks to tackle these questions.
+    </p>
+    <img src="mitplant2.jpg" alt="plant" style="width:100%">
+</div>
+
+  
+<!-- Data Analysis -->
+  <div class="w3-container" id="data" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Data Analysis</b></h1>
+  </div>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src = "pricetempday.json"></script>
+  <script type="text/javascript">
+window.onload = function(){
+  run();
+};
+
+function run(){
+
+  var dataSet = jsonDataset();
+
+  drawChart(dataSet);
+}
+//  build dataset
+// -------------------------------------
+function jsonDataset(){
+
+  //  the first position is used for
+  //  names for columns in data array
+  var dataset = [[{label:'temp',id:'temp'}, {label:'price',id:'price'},
+  {label: 'date', role: 'tooltip'}]];
+  console.log(dataset);
+  var length = data.length;
+  for(var i=0; i<length; i++){
+      dataset.push([data[i].temp, data[i].price, data[i].date]);
+  }
+  return dataset;
+}
+//  draw graph
+// -------------------------------------
+google.load("visualization", "1", {packages:["corechart"]});
+//google.setOnLoadCallback(drawChart);
+
+function drawChart(data) {
+
+  var options = {
+      title: 'Energy Prices by Daily Temperature',
+      series: {
+          0: {type: "scatter"}
+      },
+
+      vAxis: {minValue: 0, maxValue: 100},
+
+      trendlines: {
+          0: {
+          color: 'purple',
+          lineWidth: 10,
+          opacity: 0.2,
+          type: 'polynomial',
+          degree: 1,
+          showR2: true,
+          visibleInLegend: true,
+          }
+      },
+      tooltip: {isHtml: true},
+      hAxis: {title: 'Average Daily Temperature', minValue: 0, maxValue: 100},
+      vAxis: {title: 'Price', minValue: 0, maxValue: 100},
+  };
+
+  var dataTable = google.visualization.arrayToDataTable(data);
+
+  var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+  chart.draw(dataTable, options);
+
+}
+
+</script>
+
+<div id="chart_div" style="width: 1000px; height: 400px;"></div>
+
+<!-- Dashboard -->
+<div class="w3-container" id="dashboard" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Dashboard</b></h1>
+
+  </div>
+
+    <input type="text" id="startDate" value="04/01/2016">
+    <input type="text" id="endDate" value="04/14/2016">
+    <input type="number" id="BidPrice" value="20">
+    <button onclick="updateBidPrice()">Bid Price, $/MWh</button>
+    <input type="number" id="BidAmount" value="1">
+    <button onclick="updateBidAmount()">Bid Amount, MW</button>
+
+  <div id="drawISONEPRicesChart_Div" style="width: 900px; height: 500px;"></div>
+    <div id="drawProfitability_Div" style="width: 900px; height: 500px;"></div>
+    <div id="drawPriceUse_Div" style="width: 900px; height: 500px;"></div>
+    
+    <script type="text/javascript">
+
+    //loading google charts
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    google.charts.setOnLoadCallback(drawISONEPRices);
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawProfit);
+    google.charts.load('current', {'packages':['line', 'corechart']});
+    google.charts.setOnLoadCallback(drawPriceUse);
+
+
+function drawISONEPRices() {
+    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+
+    var PriceBidGraphableArray = rangeData.map(function (element) {
+        var intermediate = [];
+        intermediate.push(element[1] + '/' + element[2]);
+        intermediate.push(element[6]);
+        intermediate.push(BidPrice);
+        return intermediate;
+    });
+    PriceBidGraphableArray.unshift(['Time', 'DAM LMP', "Bid Price"]);
+    var gdata = google.visualization.arrayToDataTable(PriceBidGraphableArray);
+    var options = {
+        title: 'ISO-NE Price versus Bid Price',
+        vAxis: { title: 'LMP ($/MWh)' },
+        hAxis: { title: 'Time (Month/Day/Year/Hour)' },
+        seriesType: 'line',
+        series: { 1: { type: 'line' } }
+    }
+    var chart = new google.visualization.ComboChart(document.getElementById('drawISONEPRicesChart_Div'));
+    chart.draw(gdata, options);
+        }
+         
+//tried https://stackoverflow.com/questions/17500312/is-there-some-way-i-can-join-the-contents-of-two-javascript-arrays-much-like-i
+
+function drawProfit(){
+    var Profit = []; 
+    var Use = [];
+    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+    rangeData.forEach(function(element) {
+        var profitIntermediate = {}; 
+        profitIntermediate.date = element[1];
+        profitIntermediate.time = element[2]+':00';
+        if(element[6]>=BidPrice){
+            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+            }
+        else{profitIntermediate.perUnitProfit= 0}
+    
+        Profit.push(profitIntermediate); 
+    });
+
+    useData.forEach(function(element){
+        var DataIntermediate = {};
+        if(element.time[3]== '0'){
+            DataIntermediate.date = element.date;
+            DataIntermediate.time = element.time; 
+                if(element.usage/1000 >= BidMW){
+                DataIntermediate.MWReduction= BidMW}
+                else{DataIntermediate.MWReduction = 0}
+            Use.push(DataIntermediate);
+            }
+        });  
+            
+    function mergeArrays(a,b){
+            arr=[];
+        a.forEach(function(element){
+            let c={}; 
+           b.forEach(function(thing){
+               if((element.date===thing.date)&&(element.time===thing.time)){
+                   c.date = thing.date;
+                   c.time = thing.time;
+                   c.profit = element.perUnitProfit*thing.MWReduction; 
+                   arr.push(c);
+               }
+                                 })
+                                }); 
+                            return arr;
+                            }; 
+    var joinedArray= mergeArrays(Profit, Use); 
+    var dateArry = [];
+    rangeData.forEach(function(element){
+    if(dateArry.indexOf(element[1])==-1){dateArry.push(element[1])}
+    }); 
+
+    var dailyArray = [];
+    var currentDate = joinedArray[0].date;
+    var currentEntry = {date:currentDate, profit:0}
+    joinedArray.forEach(function(elem){
+        if(elem.date == currentEntry.date){
+            currentEntry.profit += Number(elem.profit)
+        } else {
+            dailyArray.push([currentEntry.date,currentEntry.profit]);
+            currentEntry.date = elem.date;
+            currentEntry.profit = 0;
+        }
+    });            
+
+
+    dailyArray.unshift(["Date","Profit"]); 
+        var data = new google.visualization.arrayToDataTable(dailyArray);
+        var options = {
+        title: 'Daily Profit',
+        hAxis: {
+          title: 'Day',
+                }, 
+        vAxis: {
+          title: 'Profit ($)'
+                }
+        }
+        var chart = new google.visualization.ColumnChart(document.getElementById('drawProfitability_Div'));
+        chart.draw(data, options);
+   }
+   
+function drawPriceUse(){
+    var Price = []; 
+    var Use = [];
+    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+
+    rangeData.forEach(function(element){
+        var arryIntermediate = {}; 
+        arryIntermediate.date = element[1];
+        arryIntermediate.time = element[2]+':00';
+        arryIntermediate.price = element[6]; 
+        Price.push(arryIntermediate); 
+    });
+    useData.forEach(function(element){
+        var DataIntermediate = {};
+        if(element.time[3]== '0'){
+            DataIntermediate.date = element.date;
+            DataIntermediate.time = element.time; 
+            DataIntermediate.MITUse = element.usage/1000; 
+            Use.push(DataIntermediate);
+            }
+        });  
+
+        function mergeArrays(a,b){
+            arr=[];
+        a.forEach(function(element){
+            let c={}; 
+           b.forEach(function(thing){
+               if((element.date===thing.date)&&(element.time===thing.time)){
+                   c.date = thing.date;
+                   c.time = thing.time;
+                   c.price = element.price;
+                   c.use = thing.MITUse;  
+                   arr.push(c);
+               }
+                                 })
+                                }); 
+                            return arr;
+                            }; 
+    var joinedArray= mergeArrays(Price, Use);
+    var graphThisArry = []; 
+    joinedArray.forEach(function(element){
+        var x = element.date + '/'+ element.time;
+        var y = element.price;
+        var z = element.use; 
+        graphThisArry.push([x,y,z]); 
+    }); 
+    console.log('this is the arry I want to graph'); 
+    console.log(graphThisArry); 
+    graphThisArry.unshift(["Date/Time",'ISO-NE Price ($/MWh)','MIT Use (MW)']); 
+
+    var data = new google.visualization.arrayToDataTable(graphThisArry);
+    var options = {
+        chart: {
+          title: 'ISO-NE Price ($/MWh) versus MIT Consumption (MW)'
+        },
+        series: {
+          0: {axis: 'YYY'},
+          1: {axis: 'ZZZ'}
+        },
+        axes: {
+          y: {
+            YYY: {label: 'ISO-NE Price ($/MWh)'},
+            ZZZ: {label: 'MIT Consumption (MW)'}
+          }
+        }
+    }; 
+    var Chart = new google.charts.Line(drawPriceUse_Div);
+    Chart.draw(data, options);
+}
+    </script>
+  
+
+ <!-- Team -->
+ <div class="w3-container" id="team" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-indigo"><b>Team</b></h1>
+        <p>We are a team of MIT graduate students from diverse backgrounds seeking to learn more about MIT's opportunities to become energy efficient.</p>
+        </div>
+      <!-- The Team -->
+      <div class="w3-row-padding w3-grayscale">
+         <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="nette2.jpg" alt="Annette" style="width:50%">
+            <div class="w3-container">
+              <h3>Annette Brocks</h3>
+                <p>Annette is a first year graduate student in the Technology and Policy Program.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="dave.png" alt="Dave" style="width:50%">
+            <div class="w3-container">
+              <h3>David Garufi</h3>
+                <p>Dave is a second year graduate student in the System Design and Management program.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="dj2.jpg" alt="Delbert" style="width:50%">
+                  <div class="w3-container">
+                    <h3>Delbert Joo</h3>
+                    <p>Delbert is a second year graduate student in the System Design and Management program. </p>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">1.001 Final Project</p></div>
+
+<script>
+    $( "#startDate" ).datepicker({dateFormat: "mm/dd/yy"});
+    $( "#endDate" ).datepicker({dateFormat: "mm/dd/yy"});
+
+    // Function to get data within time range
+    function getDataFromRange(startDate, endDate){
+        // Set default values
+        startDate   = startDate || $('#startDate').val();
+        endDate     = endDate || $('#endDate').val();
+        // Filter data
+        return ALLDATA.filter(o => o[1] >= startDate && o[1] <= endDate);
+    }
+
+    // Function to get data within time range
+    function getUsageFromRange(startDate, endDate){
+        // Set default values
+        startDate   = startDate || $('#startDate').val();
+        endDate     = endDate || $('#endDate').val();
+        // Filter data
+        return MITDATA.filter(o => o.date >= startDate && o.date <= endDate);
+    }
+</script>
+
+</body>
+</html>
