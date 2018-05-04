@@ -79,6 +79,11 @@
   <div class="w3-container" id="data" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-indigo"><b>Data Analysis</b></h1>
   </div>
+
+<!-- Price and Temp Analysis Chart -->
+    <div class="w3-container" id="pricetemp" style="margin-top:10px">
+        <h1 class="w3-large w3-text-indigo"><b>Price and Temperature Analysis</b></h1>
+    </div>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript" src = "pricetempday.json"></script>
   <script type="text/javascript">
@@ -90,7 +95,7 @@ function run(){
 
   var dataSet = jsonDataset();
 
-  drawChart(dataSet);
+  drawPriceTempChart(dataSet);
 }
 //  build dataset
 // -------------------------------------
@@ -110,9 +115,9 @@ function jsonDataset(){
 //  draw graph
 // -------------------------------------
 google.load("visualization", "1", {packages:["corechart"]});
-//google.setOnLoadCallback(drawChart);
+//google.setOnLoadCallback(drawPriceTempChart);
 
-function drawChart(data) {
+function drawPriceTempChart(data) {
 
   var options = {
       title: 'Energy Prices by Daily Temperature',
@@ -140,14 +145,115 @@ function drawChart(data) {
 
   var dataTable = google.visualization.arrayToDataTable(data);
 
-  var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.ScatterChart(document.getElementById('PriceTempchart_div'));
   chart.draw(dataTable, options);
 
 }
 
 </script>
+<div id="PriceTempchart_div" style="width: 1000px; height: 400px;"></div>
 
-<div id="chart_div" style="width: 1000px; height: 400px;"></div>
+<!-- Price and Month Analysis Chart -->
+<div class="w3-container" id="pricetemp" style="margin-top:10px">
+        <h1 class="w3-large w3-text-indigo"><b>Price and Month Analysis</b></h1>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawPriceMonthChart);
+    
+function drawPriceMonthChart() {
+var data = new google.visualization.DataTable();
+data.addColumn('string', "Month");
+data.addColumn('number', "Min");
+data.addColumn('number', "1stQ");
+data.addColumn('number', "3rdQ");
+data.addColumn('number', "Max");
+data.addColumn({type:'string', role:'tooltip'});
+
+data.addRow(['Jan', 1.76, 29.26, 46.76, 98.59, 'Average Price $38.52']);
+data.addRow(['Feb', 0, 19.08, 38.65, 77.78, 'Average Price $29.99']);
+data.addRow(['Mar', 4.63, 15.01, 24.82, 61.94, 'Average Price $20.65']);
+data.addRow(['Apr', 9.83, 22, 34, 67,'Average Price $28.74']);
+data.addRow(['May', 4.34, 17.86, 24.9, 44.9, 'Average Price $21.49']);
+data.addRow(['Jun', 5.07,17.43,26.86,67.34, 'Average Price $22.92']);
+data.addRow(['Jul', 3,20.8,39,99.8, 'Average Price $31.56']);
+data.addRow(['Aug', 9.91,22.88,42.2,98.1,'Average Price $35.46']); 
+data.addRow(['Sep', 1.01,19.76,42.24,109.35, 'Average Price $34.58']);
+data.addRow(['Oct', 1.99, 15.66, 27.75, 104.05, 'Average Price $24.60']);
+data.addRow(['Nov', 8.67, 18.94, 30.47, 90.67, 'Average Price $25.96']);
+data.addRow(['Dec', 7.49, 37.87, 65.22, 123.64, 'Average Price $52.99']);
+
+var options = {
+legend:'none',
+title: 'Average Energy Prices by Month',
+hAxis: {title: 'Month'},
+vAxis: {title: 'Price', minValue: 0, maxValue: 150}
+};
+
+var chart = new google.visualization.CandlestickChart(document.getElementById('PriceMonthchart_div'));
+
+chart.draw(data, options);
+}
+</script>
+<div id="PriceMonthchart_div" style="width: 900px; height: 500px;"></div>
+
+<!-- Price and Hour Analysis Chart -->
+<div class="w3-container" id="pricehour style="margin-top:10px">
+        <h1 class="w3-large w3-text-indigo"><b>Price and Hour Analysis</b></h1>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawPriceHourChart);
+    function drawPriceHourChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', "Month");
+        data.addColumn('number', "Min");
+        data.addColumn('number', "1stQ");
+        data.addColumn('number', "3rdQ");
+        data.addColumn('number', "Max");
+        data.addColumn({type:'string', role:'tooltip'});
+
+        data.addRow(['0100', 0.54, 17.27, 27.72, 102.49, 'Average Hourly Price $24.06']);
+        data.addRow(['0200', 0.01, 14.93, 25.27, 98.59, 'Average Hourly Price $22.06']);
+        data.addRow(['0300', 0.0, 13.19, 23.1, 95.52, 'Average Hourly Price $20.55']);
+        data.addRow(['0400', 0.0, 11.77, 21.96, 93.76, 'Average Hourly Price $19.70']);
+        data.addRow(['0500', 0.1, 12.83, 22.93, 96.89, 'Average Hourly Price $20.41']);
+        data.addRow(['0600', 5.1, 15.73, 26.47, 106.73, 'Average Hourly Price $23.18']);
+        data.addRow(['0700', 5.12, 18.96, 32.16, 122.95, 'Average Hourly Price $28.01']);
+        data.addRow(['0800', 3.01, 20.28, 25.35, 133.64, 'Average Hourly Price $29.85']);
+        data.addRow(['0900', 10.31, 21.54, 36.04, 111.24, 'Average Hourly Price $30.85']);
+        data.addRow(['1000', 12.6, 22.53, 36.94, 155.05, 'Average Hourly Price $32.57']);
+        data.addRow(['1100', 11.65, 23.02, 37.90, 98.15, 'Average Hourly Price $32.85']);
+        data.addRow(['1200', 11.62, 23.31, 39.62, 98.26, 'Average Hourly Price $33.71']);
+        data.addRow(['1300', 12.37, 22.41, 40.32, 106.16, 'Average Hourly Price $33.94']);
+        data.addRow(['1400', 11.3, 22.27, 41.15, 104.70, 'Average Hourly Price $34.47']);
+        data.addRow(['1500', 10.56, 21.53, 42.58, 109.17, 'Average Hourly Price $34.56']);
+        data.addRow(['1600', 10.54, 22.55, 43.24, 109.34, 'Average Hourly Price $35.53']);
+        data.addRow(['1700', 10.65, 23.92, 49.54, 113.70, 'Average Hourly Price $39.07']);
+        data.addRow(['1800', 13.86, 26.77, 57.09, 122.85, 'Average Hourly Price $43.96']);
+        data.addRow(['1900', 15.32, 27.50, 52.86, 115.41, 'Average Hourly Price $42.06']);
+        data.addRow(['2000', 16.05, 26.93, 46.83, 109.10, 'Average Hourly Price $39.05']);
+        data.addRow(['2100', 13.88, 24.49, 42.41, 110.56, 'Average Hourly Price $35.54']);
+        data.addRow(['2200', 12.60, 20.95, 35.78, 100.35, 'Average Hourly Price $30.29']);
+        data.addRow(['2300', 10.64, 18.40, 29.92, 92.26, 'Average Hourly Price $26.04']);
+        data.addRow(['2400', 8.33, 17.14, 26.47, 89.49, 'Average Hourly Price $23.89']);
+
+    var options = {
+        legend:'none',
+        title: 'Average Energy Prices by Hour',
+        hAxis: {title: 'Hour of Day'},
+        vAxis: {title: 'Price', minValue: 0, maxValue: 150}
+    };
+  
+    var chart = new google.visualization.CandlestickChart(document.getElementById('PriceHourchart_div'));
+  
+    chart.draw(data, options);
+    }
+      </script>
+<div id="PriceHourchart_div" style="width: 900px; height: 500px;"></div>
+
 
 <!-- Dashboard -->
 <div class="w3-container" id="dashboard" style="margin-top:75px">
@@ -200,9 +306,7 @@ function drawISONEPRices() {
     var chart = new google.visualization.ComboChart(document.getElementById('drawISONEPRicesChart_Div'));
     chart.draw(gdata, options);
         }
-         
-//tried https://stackoverflow.com/questions/17500312/is-there-some-way-i-can-join-the-contents-of-two-javascript-arrays-much-like-i
-
+    
 function drawProfit(){
     var Profit = []; 
     var Use = [];
