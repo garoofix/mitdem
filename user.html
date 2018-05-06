@@ -69,7 +69,7 @@
         Only a third of the energy embedded in fossil fuel ends up consumed. It can be a lot cheaper for people not to use energy in the first place. Demand response refers to end-use consumers using less energy. Demand response can be considered a resource similar to a generator - using less energy is like making more energy. In these ISO markets, demand response resources can bid in like generators. Demand response resources can say “I would like to be paid $J for not using K amount of energy.” If cost-effective, the ISO will ask demand response resources to use less energy, replacing a generator from producing more energy.
     </p> 
     <p>
-        MIT could be a demand response resource in New England’s ISO. In other words, MIT could make money by reducing its electricity consumption. However, this theoretical idea may not align with the reality: could MIT make money from participating as a demand response resource? If so, how much money? Our project looks to tackle these questions.
+        MIT could be a demand response resource in New England’s ISO  (ISO-NE). In other words, MIT could make money by reducing its electricity consumption. However, this theoretical idea may not align with the reality: could MIT make money from participating as a demand response resource? If so, how much money? Our project looks to tackle these questions.
     </p>
     <img src="mitplant2.jpg" alt="plant" style="width:100%">
 </div>
@@ -83,6 +83,7 @@
 <!-- Price and Temp Analysis Chart -->
     <div class="w3-container" id="pricetemp" style="margin-top:10px">
         <h1 class="w3-large w3-text-indigo"><b>Price and Temperature Analysis</b></h1>
+        <p>Extreme temperatures seem correlated with higher prices.</p>
     </div>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript" src = "pricetempday.json"></script>
@@ -105,7 +106,6 @@ function jsonDataset(){
   //  names for columns in data array
   var dataset = [[{label:'temp',id:'temp'}, {label:'price',id:'price'},
   {label: 'date', role: 'tooltip'}]];
-  console.log(dataset);
   var length = data.length;
   for(var i=0; i<length; i++){
       dataset.push([data[i].temp, data[i].price, data[i].date]);
@@ -196,12 +196,15 @@ var chart = new google.visualization.CandlestickChart(document.getElementById('P
 chart.draw(data, options);
 }
 </script>
-<div id="PriceMonthchart_div" style="width: 900px; height: 500px;"></div>
+<div id="PriceMonthchart_div" style="width: 900px; height: 500px"></div>
 
 <!-- Price and Hour Analysis Chart -->
-<div class="w3-container" id="pricehour style="margin-top:10px">
-        <h1 class="w3-large w3-text-indigo"><b>Price and Hour Analysis</b></h1>
+<div class="w3-container" id="pricehour" style="margin-top:10px">
 </div>
+<div class = "w3-container" id = "pricehour" style = 'margin-top: 10px'>
+    <h1 class = "w3-large w3-text-indigo"><b>Price and Hour Anaylsis</b></h1>
+</div>
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
             google.charts.load('current', {'packages':['corechart']});
@@ -258,20 +261,36 @@ chart.draw(data, options);
 <!-- Dashboard -->
 <div class="w3-container" id="dashboard" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-indigo"><b>Dashboard</b></h1>
-
   </div>
-
+    <p> Play with time periods and bid parameters to see how profitability changes. Bid price reflects how much it costs MIT to reduce energy. 
+        Bid amount is how much energy MIT can reduce.  </p>
+    <h4>Select start date</h4>
     <input type="text" id="startDate" value="04/01/2016">
+    <h4>Select end date</h4>
     <input type="text" id="endDate" value="04/14/2016">
+    <h4>Insert a bid price ($/MW)</h4>
     <input type="number" id="BidPrice" value="20">
-    <button onclick="updateBidPrice()">Bid Price, $/MWh</button>
-    <input type="number" id="BidAmount" value="1">
-    <button onclick="updateBidAmount()">Bid Amount, MW</button>
-
-  <div id="drawISONEPRicesChart_Div" style="width: 900px; height: 500px;"></div>
+    <h4>Insert a bid amount (MW))</h4>
+    <input type ="number" id = "BidAmount" value = "1"> 
+    <p> </p>
+    <button onclick="updateBid()">Update</button> 
+    <div style="width: 900px; height: 75px"> </div>
+    <p>See how MIT's bid price relates to ISO-NE's prices. </p>
+    <div id="drawISONEPRicesChart_Div" style="width: 900px; height: 500px;"></div>
+    <div style="width: 900px; height: 75px"> </div>
+    <p>The profit that MIT could make each day is dependent upon MIT's bid price, MIT's bid amount, and ISO-NE's prices. </p>
     <div id="drawProfitability_Div" style="width: 900px; height: 500px;"></div>
+    <div style="width: 900px; height: 75px"> </div>
+    <p> MIT might be consuming a lot of energy during high priced times (perhaps because of weather). Or, there is an opportunity to make money.</p>
     <div id="drawPriceUse_Div" style="width: 900px; height: 500px;"></div>
-    
+    <div>
+        <h3> Total profit ($) of interval</h3>
+        </div>
+    <div id ="IntervalProfit_Div" style="width: 900px; height: 50px;">Total Profit</div>
+    <div>
+        <h3> Total 2016 profit ($)</h3>
+        </div>
+    <div id ="Total2016Profit_Div" style="width: 900px; height: 50px;">Total 2016 Profit</div>
     <script type="text/javascript">
 
     //loading google charts
@@ -281,8 +300,13 @@ chart.draw(data, options);
     google.charts.setOnLoadCallback(drawProfit);
     google.charts.load('current', {'packages':['line', 'corechart']});
     google.charts.setOnLoadCallback(drawPriceUse);
+//load the profit tallys
+window.onload = function(){
+    totalProfit();
+    total2016Profit();  
+}
 
-
+//Graph 1
 function drawISONEPRices() {
     var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
     var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
@@ -307,6 +331,7 @@ function drawISONEPRices() {
     chart.draw(gdata, options);
         }
     
+//graph 2
 function drawProfit(){
     var Profit = []; 
     var Use = [];
@@ -370,7 +395,6 @@ function drawProfit(){
         }
     });            
 
-
     dailyArray.unshift(["Date","Profit"]); 
         var data = new google.visualization.arrayToDataTable(dailyArray);
         var options = {
@@ -385,7 +409,7 @@ function drawProfit(){
         var chart = new google.visualization.ColumnChart(document.getElementById('drawProfitability_Div'));
         chart.draw(data, options);
    }
-   
+//graph 3  
 function drawPriceUse(){
     var Price = []; 
     var Use = [];
@@ -432,9 +456,7 @@ function drawPriceUse(){
         var y = element.price;
         var z = element.use; 
         graphThisArry.push([x,y,z]); 
-    }); 
-    console.log('this is the arry I want to graph'); 
-    console.log(graphThisArry); 
+    });  
     graphThisArry.unshift(["Date/Time",'ISO-NE Price ($/MWh)','MIT Use (MW)']); 
 
     var data = new google.visualization.arrayToDataTable(graphThisArry);
@@ -456,9 +478,111 @@ function drawPriceUse(){
     var Chart = new google.charts.Line(drawPriceUse_Div);
     Chart.draw(data, options);
 }
-    </script>
-  
+//this is the total profit for the interval
+function totalProfit(){
+    var Profit = []; 
+    var Use = [];
+    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+    rangeData.forEach(function(element) {
+        var profitIntermediate = {}; 
+        profitIntermediate.date = element[1];
+        profitIntermediate.time = element[2]+':00';
+        if(element[6]>=BidPrice){
+            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+            }
+        else{profitIntermediate.perUnitProfit= 0}
+    
+        Profit.push(profitIntermediate); 
+    });
 
+    useData.forEach(function(element){
+        var DataIntermediate = {};
+        if(element.time[3]== '0'){
+            DataIntermediate.date = element.date;
+            DataIntermediate.time = element.time; 
+                if(element.usage/1000 >= BidMW){
+                DataIntermediate.MWReduction= BidMW}
+                else{DataIntermediate.MWReduction = 0}
+            Use.push(DataIntermediate);
+            }
+        });  
+            
+    function mergeArrays(a,b){
+            arr=[];
+        a.forEach(function(element){
+            let c={}; 
+           b.forEach(function(thing){
+               if((element.date===thing.date)&&(element.time===thing.time)){
+                   c.date = thing.date;
+                   c.time = thing.time;
+                   c.profit = element.perUnitProfit*thing.MWReduction; 
+                   arr.push(c);
+               }
+                                 })
+                                }); 
+                            return arr;
+                            }; 
+    var joinedArray= mergeArrays(Profit, Use); 
+    console.log('this should be just the profit of the interval'); 
+    var totalProfit = joinedArray.reduce(function(accum, current){
+    return accum + current.profit;  
+},0); 
+    console.log(totalProfit); 
+    document.getElementById("IntervalProfit_Div").innerHTML = String(totalProfit.toFixed(2)); 
+}
+//this is the total profit for 2016 
+function total2016Profit(){
+    var Profit = []; 
+    var Use = [];
+    ALLDATA.forEach(function(element) {
+        var profitIntermediate = {}; 
+        profitIntermediate.date = element[1];
+        profitIntermediate.time = element[2]+':00';
+        if(element[6]>=BidPrice){
+            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+            }
+        else{profitIntermediate.perUnitProfit= 0}
+    
+        Profit.push(profitIntermediate); 
+    });
+    MITDATA.forEach(function(element){
+        var DataIntermediate = {};
+        if(element.time[3]== '0'){
+            DataIntermediate.date = element.date;
+            DataIntermediate.time = element.time; 
+                if(element.usage/1000 >= BidMW){
+                DataIntermediate.MWReduction= BidMW}
+                else{DataIntermediate.MWReduction = 0}
+            Use.push(DataIntermediate);
+            }
+        });      
+    function mergeArrays(a,b){
+            arr=[];
+        a.forEach(function(element){
+            let c={}; 
+           b.forEach(function(thing){
+               if((element.date===thing.date)&&(element.time===thing.time)){
+                   c.date = thing.date;
+                   c.time = thing.time;
+                   c.profit = element.perUnitProfit*thing.MWReduction; 
+                   arr.push(c);
+               }
+                                 })
+                                }); 
+                            return arr;
+                            }; 
+    var joinedArray= mergeArrays(Profit, Use); 
+    console.log('total 2016 profit'); 
+    var totalProfit = joinedArray.reduce(function(accum, current){
+    return accum + current.profit;  
+},0); 
+    console.log(totalProfit); 
+    document.getElementById("Total2016Profit_Div").innerHTML = String(totalProfit.toFixed(2)); 
+}
+
+    </script>
+  <a href="dash/run.html" style="font-size:1.2em;">Click to View Live Dashboard</a>
  <!-- Team -->
  <div class="w3-container" id="team" style="margin-top:75px">
         <h1 class="w3-xxxlarge w3-text-indigo"><b>Team</b></h1>
