@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-            crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script src="datAll.js"></script>
-        <script src="Bid.js"></script>
-        <script src="mitUse.js"></script>
-    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="datAll.js"></script>
+    <script src="Bid.js"></script>
+    <script src="mitUse.js"></script>
+
 </head>
 <title>1.001 Final Project</title>
 <meta charset="UTF-8">
@@ -32,237 +32,220 @@
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>1.001 Final Project</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT</a>     
-    <a href="#data" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DATA ANALYSIS</a> 
-    <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DASHBOARD</a> 
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TEAM</a> 
-  </div>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>1.001 Final Project</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT</a>
+        <a href="#data" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DATA ANALYSIS</a>
+        <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DASHBOARD</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TEAM</a>
+    </div>
 </nav>
 
 <!-- PAGE CONTENT -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Save Energy Make Money</b></h1>
-  </div>
-  
-  <img src="powerplantImage.jpg" alt="plant" style="width:100%">
-
-<!-- About -->
-<div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>About</b></h1>
-    <p>
-        MIT looks to reduce campus greenhouse gas emissions by at least 32% of 2014 levels by 2030.  If MIT continues to purchase significant quantities of electricity from the grid, it may be challenging to incentivize the actions necessary to achieve these ambitious climate goals.
-    </p>
-    <p>
-        However, MIT could get paid for reducing its electricity consumption.
-        Smaller consumers write a check to an electric utility.  However, in Massachusetts, these utilities are not generating power. They buy power in a large auction. In this auction, overseen by an  “Independent System Operator (ISO),” utilities say “I am willing to pay $X for Y amount of power,” and for generators to offer “$A for providing B amount of power.” The ISO makes sure that the cheapest power is procured, while ensuring the transmission lines are safe.
-    </p>
-    <p>
-        Only a third of the energy embedded in fossil fuel ends up consumed. It can be a lot cheaper for people not to use energy in the first place. Demand response refers to end-use consumers using less energy. Demand response can be considered a resource similar to a generator - using less energy is like making more energy. In these ISO markets, demand response resources can bid in like generators. Demand response resources can say “I would like to be paid $J for not using K amount of energy.” If cost-effective, the ISO will ask demand response resources to use less energy, replacing a generator from producing more energy.
-    </p> 
-    <p>
-        MIT could be a demand response resource in New England’s ISO  (ISO-NE). In other words, MIT could make money by reducing its electricity consumption. However, this theoretical idea may not align with the reality: could MIT make money from participating as a demand response resource? If so, how much money? Our project looks to tackle these questions.
-    </p>
-    <img src="mitplant2.jpg" alt="plant" style="width:100%">
-</div>
-
-  
-<!-- Data Analysis -->
-  <div class="w3-container" id="data" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Data Analysis</b></h1>
-  </div>
-
-<!-- Price and Temp Analysis Chart -->
-    <div class="w3-container" id="pricetemp" style="margin-top:10px">
-        <h1 class="w3-large w3-text-indigo"><b>Price and Temperature Analysis</b></h1>
-        <p>Extreme temperatures seem correlated with higher prices.</p>
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Save Energy Make Money</b></h1>
     </div>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript" src = "pricetempday.json"></script>
-  <script type="text/javascript">
-window.onload = function(){
-  run();
-};
 
-function run(){
+    <img src="powerplantImage.jpg" alt="plant" style="width:100%">
 
-  var dataSet = jsonDataset();
-
-  drawPriceTempChart(dataSet);
-}
-//  build dataset
-// -------------------------------------
-function jsonDataset(){
-
-  //  the first position is used for
-  //  names for columns in data array
-  var dataset = [[{label:'temp',id:'temp'}, {label:'price',id:'price'},
-  {label: 'date', role: 'tooltip'}]];
-  var length = data.length;
-  for(var i=0; i<length; i++){
-      dataset.push([data[i].temp, data[i].price, data[i].date]);
-  }
-  return dataset;
-}
-//  draw graph
-// -------------------------------------
-google.load("visualization", "1", {packages:["corechart"]});
-//google.setOnLoadCallback(drawPriceTempChart);
-
-function drawPriceTempChart(data) {
-
-  var options = {
-      title: 'Energy Prices by Daily Temperature',
-      series: {
-          0: {type: "scatter"}
-      },
-
-      vAxis: {minValue: 0, maxValue: 100},
-
-      trendlines: {
-          0: {
-          color: 'purple',
-          lineWidth: 10,
-          opacity: 0.2,
-          type: 'polynomial',
-          degree: 1,
-          showR2: true,
-          visibleInLegend: true,
-          }
-      },
-      tooltip: {isHtml: true},
-      hAxis: {title: 'Average Daily Temperature', minValue: 0, maxValue: 100},
-      vAxis: {title: 'Price', minValue: 0, maxValue: 100},
-  };
-
-  var dataTable = google.visualization.arrayToDataTable(data);
-
-  var chart = new google.visualization.ScatterChart(document.getElementById('PriceTempchart_div'));
-  chart.draw(dataTable, options);
-
-}
-
-</script>
-<div id="PriceTempchart_div" style="width: 1000px; height: 400px;"></div>
-
-<!-- Price and Month Analysis Chart -->
-<div class="w3-container" id="pricetemp" style="margin-top:10px">
-        <h1 class="w3-large w3-text-indigo"><b>Price and Month Analysis</b></h1>
-</div>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawPriceMonthChart);
-    
-function drawPriceMonthChart() {
-var data = new google.visualization.DataTable();
-data.addColumn('string', "Month");
-data.addColumn('number', "Min");
-data.addColumn('number', "1stQ");
-data.addColumn('number', "3rdQ");
-data.addColumn('number', "Max");
-data.addColumn({type:'string', role:'tooltip'});
-
-data.addRow(['Jan', 1.76, 29.26, 46.76, 98.59, 'Average Price $38.52']);
-data.addRow(['Feb', 0, 19.08, 38.65, 77.78, 'Average Price $29.99']);
-data.addRow(['Mar', 4.63, 15.01, 24.82, 61.94, 'Average Price $20.65']);
-data.addRow(['Apr', 9.83, 22, 34, 67,'Average Price $28.74']);
-data.addRow(['May', 4.34, 17.86, 24.9, 44.9, 'Average Price $21.49']);
-data.addRow(['Jun', 5.07,17.43,26.86,67.34, 'Average Price $22.92']);
-data.addRow(['Jul', 3,20.8,39,99.8, 'Average Price $31.56']);
-data.addRow(['Aug', 9.91,22.88,42.2,98.1,'Average Price $35.46']); 
-data.addRow(['Sep', 1.01,19.76,42.24,109.35, 'Average Price $34.58']);
-data.addRow(['Oct', 1.99, 15.66, 27.75, 104.05, 'Average Price $24.60']);
-data.addRow(['Nov', 8.67, 18.94, 30.47, 90.67, 'Average Price $25.96']);
-data.addRow(['Dec', 7.49, 37.87, 65.22, 123.64, 'Average Price $52.99']);
-
-var options = {
-legend:'none',
-title: 'Average Energy Prices by Month',
-hAxis: {title: 'Month'},
-vAxis: {title: 'Price', minValue: 0, maxValue: 150}
-};
-
-var chart = new google.visualization.CandlestickChart(document.getElementById('PriceMonthchart_div'));
-
-chart.draw(data, options);
-}
-</script>
-<div id="PriceMonthchart_div" style="width: 900px; height: 500px"></div>
-
-<!-- Price and Hour Analysis Chart -->
-<div class="w3-container" id="pricehour" style="margin-top:10px">
-</div>
-<div class = "w3-container" id = "pricehour" style = 'margin-top: 10px'>
-    <h1 class = "w3-large w3-text-indigo"><b>Price and Hour Anaylsis</b></h1>
-</div>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-            google.charts.load('current', {'packages':['corechart']});
-            google.charts.setOnLoadCallback(drawPriceHourChart);
-    function drawPriceHourChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', "Month");
-        data.addColumn('number', "Min");
-        data.addColumn('number', "1stQ");
-        data.addColumn('number', "3rdQ");
-        data.addColumn('number', "Max");
-        data.addColumn({type:'string', role:'tooltip'});
-
-        data.addRow(['0100', 0.54, 17.27, 27.72, 102.49, 'Average Hourly Price $24.06']);
-        data.addRow(['0200', 0.01, 14.93, 25.27, 98.59, 'Average Hourly Price $22.06']);
-        data.addRow(['0300', 0.0, 13.19, 23.1, 95.52, 'Average Hourly Price $20.55']);
-        data.addRow(['0400', 0.0, 11.77, 21.96, 93.76, 'Average Hourly Price $19.70']);
-        data.addRow(['0500', 0.1, 12.83, 22.93, 96.89, 'Average Hourly Price $20.41']);
-        data.addRow(['0600', 5.1, 15.73, 26.47, 106.73, 'Average Hourly Price $23.18']);
-        data.addRow(['0700', 5.12, 18.96, 32.16, 122.95, 'Average Hourly Price $28.01']);
-        data.addRow(['0800', 3.01, 20.28, 25.35, 133.64, 'Average Hourly Price $29.85']);
-        data.addRow(['0900', 10.31, 21.54, 36.04, 111.24, 'Average Hourly Price $30.85']);
-        data.addRow(['1000', 12.6, 22.53, 36.94, 155.05, 'Average Hourly Price $32.57']);
-        data.addRow(['1100', 11.65, 23.02, 37.90, 98.15, 'Average Hourly Price $32.85']);
-        data.addRow(['1200', 11.62, 23.31, 39.62, 98.26, 'Average Hourly Price $33.71']);
-        data.addRow(['1300', 12.37, 22.41, 40.32, 106.16, 'Average Hourly Price $33.94']);
-        data.addRow(['1400', 11.3, 22.27, 41.15, 104.70, 'Average Hourly Price $34.47']);
-        data.addRow(['1500', 10.56, 21.53, 42.58, 109.17, 'Average Hourly Price $34.56']);
-        data.addRow(['1600', 10.54, 22.55, 43.24, 109.34, 'Average Hourly Price $35.53']);
-        data.addRow(['1700', 10.65, 23.92, 49.54, 113.70, 'Average Hourly Price $39.07']);
-        data.addRow(['1800', 13.86, 26.77, 57.09, 122.85, 'Average Hourly Price $43.96']);
-        data.addRow(['1900', 15.32, 27.50, 52.86, 115.41, 'Average Hourly Price $42.06']);
-        data.addRow(['2000', 16.05, 26.93, 46.83, 109.10, 'Average Hourly Price $39.05']);
-        data.addRow(['2100', 13.88, 24.49, 42.41, 110.56, 'Average Hourly Price $35.54']);
-        data.addRow(['2200', 12.60, 20.95, 35.78, 100.35, 'Average Hourly Price $30.29']);
-        data.addRow(['2300', 10.64, 18.40, 29.92, 92.26, 'Average Hourly Price $26.04']);
-        data.addRow(['2400', 8.33, 17.14, 26.47, 89.49, 'Average Hourly Price $23.89']);
-
-    var options = {
-        legend:'none',
-        title: 'Average Energy Prices by Hour',
-        hAxis: {title: 'Hour of Day'},
-        vAxis: {title: 'Price', minValue: 0, maxValue: 150}
-    };
-  
-    var chart = new google.visualization.CandlestickChart(document.getElementById('PriceHourchart_div'));
-  
-    chart.draw(data, options);
-    }
-      </script>
-<div id="PriceHourchart_div" style="width: 900px; height: 500px;"></div>
+    <!-- About -->
+    <div class="w3-container" id="about" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-indigo"><b>About</b></h1>
+        <p>
+            MIT looks to reduce campus greenhouse gas emissions by at least 32% of 2014 levels by 2030.  If MIT continues to purchase significant quantities of electricity from the grid, it may be challenging to incentivize the actions necessary to achieve these ambitious climate goals.
+        </p>
+        <p>
+            However, MIT could get paid for reducing its electricity consumption.
+            Smaller consumers write a check to an electric utility.  However, in Massachusetts, these utilities are not generating power. They buy power in a large auction. In this auction, overseen by an  “Independent System Operator (ISO),” utilities say “I am willing to pay $X for Y amount of power,” and for generators to offer “$A for providing B amount of power.” The ISO makes sure that the cheapest power is procured, while ensuring the transmission lines are safe.
+        </p>
+        <p>
+            Only a third of the energy embedded in fossil fuel ends up consumed. It can be a lot cheaper for people not to use energy in the first place. Demand response refers to end-use consumers using less energy. Demand response can be considered a resource similar to a generator - using less energy is like making more energy. In these ISO markets, demand response resources can bid in like generators. Demand response resources can say “I would like to be paid $J for not using K amount of energy.” If cost-effective, the ISO will ask demand response resources to use less energy, replacing a generator from producing more energy.
+        </p>
+        <p>
+            MIT could be a demand response resource in New England’s ISO  (ISO-NE). In other words, MIT could make money by reducing its electricity consumption. However, this theoretical idea may not align with the reality: could MIT make money from participating as a demand response resource? If so, how much money? Our project looks to tackle these questions.
+        </p>
+        <img src="mitplant2.jpg" alt="plant" style="width:100%">
+    </div>
 
 
-<!-- Dashboard -->
-<div class="w3-container" id="dashboard" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Dashboard</b></h1>
-  </div>
-    <p> Play with time periods and bid parameters to see how profitability changes. Bid price reflects how much it costs MIT to reduce energy. 
+    <!-- Data Analysis -->
+    <div class="w3-container" id="data" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-indigo"><b>Data Analysis</b></h1>
+    </div>
+
+    <!-- Price and Temp Analysis Chart -->
+    <div class="w3-container" id="pricetemp" style="margin-top:10px">
+        <h1 class="w3-xlarge w3-text-indigo"><b>Price and Temperature Analysis</b></h1>
+    </div>
+    <p>Temperature extremes drive higher prices.</p>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src = "pricetempday.json"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            run();
+            totalProfit();
+            total2016Profit();
+        };
+        function run(){
+            var dataSet = jsonDataset();
+            drawPriceTempChart(dataSet);
+        }
+        //  build dataset
+        // -------------------------------------
+        function jsonDataset(){
+//  the first position is used for
+//  names for columns in data array
+            var dataset = [[{label:'temp',id:'temp'}, {label:'price',id:'price'},
+                {label: 'date', role: 'tooltip'}]];
+            var length = data.length;
+            for(var i=0; i<length; i++){
+                dataset.push([data[i].temp, data[i].price, data[i].date]);
+            }
+            return dataset;
+        }
+        //  draw graph
+        // -------------------------------------
+        google.load("visualization", "1", {packages:["corechart"]});
+        //google.setOnLoadCallback(drawPriceTempChart);
+        function drawPriceTempChart(data) {
+            var options = {
+                title: 'Energy Prices by Daily Temperature',
+                series: {
+                    0: {type: "scatter"}
+                },
+                vAxis: {minValue: 0, maxValue: 100},
+//   trendlines: {
+//       0: {
+//       color: 'purple',
+//       lineWidth: 10,
+//       opacity: 0.2,
+//       type: 'polynomial',
+//       degree: 1,
+//       showR2: true,
+//       visibleInLegend: true,
+//       }
+//   },
+                tooltip: {isHtml: true},
+                hAxis: {title: 'Average Daily Temperature', minValue: 0, maxValue: 100},
+                vAxis: {title: 'Price', minValue: 0, maxValue: 100},
+            };
+            var dataTable = google.visualization.arrayToDataTable(data);
+            var chart = new google.visualization.ScatterChart(document.getElementById('PriceTempchart_div'));
+            chart.draw(dataTable, options);
+        }
+    </script>
+    <div id="PriceTempchart_div" style="width: 1000px; height: 400px;"></div>
+
+    <!-- Price and Month Analysis Chart -->
+    <div class="w3-container" id="pricetemp" style="margin-top:10px">
+        <h1 class="w3-xlarge w3-text-indigo"><b>Price and Month Analysis</b></h1>
+    </div>
+    <p>Monthly average prices also reflect temperature sensitivity.</p>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawPriceMonthChart);
+
+        function drawPriceMonthChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', "Month");
+            data.addColumn('number', "Min");
+            data.addColumn('number', "1stQ");
+            data.addColumn('number', "3rdQ");
+            data.addColumn('number', "Max");
+            data.addColumn({type:'string', role:'tooltip'});
+            data.addRow(['Jan', 1.76, 29.26, 46.76, 98.59, 'Average Price $38.52']);
+            data.addRow(['Feb', 0, 19.08, 38.65, 77.78, 'Average Price $29.99']);
+            data.addRow(['Mar', 4.63, 15.01, 24.82, 61.94, 'Average Price $20.65']);
+            data.addRow(['Apr', 9.83, 22, 34, 67,'Average Price $28.74']);
+            data.addRow(['May', 4.34, 17.86, 24.9, 44.9, 'Average Price $21.49']);
+            data.addRow(['Jun', 5.07,17.43,26.86,67.34, 'Average Price $22.92']);
+            data.addRow(['Jul', 3,20.8,39,99.8, 'Average Price $31.56']);
+            data.addRow(['Aug', 9.91,22.88,42.2,98.1,'Average Price $35.46']);
+            data.addRow(['Sep', 1.01,19.76,42.24,109.35, 'Average Price $34.58']);
+            data.addRow(['Oct', 1.99, 15.66, 27.75, 104.05, 'Average Price $24.60']);
+            data.addRow(['Nov', 8.67, 18.94, 30.47, 90.67, 'Average Price $25.96']);
+            data.addRow(['Dec', 7.49, 37.87, 65.22, 123.64, 'Average Price $52.99']);
+            var options = {
+                legend:'none',
+                title: 'Average Energy Prices by Month',
+                hAxis: {title: 'Month'},
+                vAxis: {title: 'Price', minValue: 0, maxValue: 150}
+            };
+            var chart = new google.visualization.CandlestickChart(document.getElementById('PriceMonthchart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+    <div id="PriceMonthchart_div" style="width: 900px; height: 500px"></div>
+
+    <!-- Price and Hour Analysis Chart -->
+    <div class="w3-container" id="pricehour" style="margin-top:10px">
+    </div>
+    <div class = "w3-container" id = "pricehour" style = 'margin-top: 10px'>
+        <h1 class = "w3-xlarge w3-text-indigo"><b>Price and Hour Anaylsis</b></h1>
+    </div>
+    <p>Peak hourly prices at 6 pm present a demand response opportunity.</p>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawPriceHourChart);
+        function drawPriceHourChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', "Month");
+            data.addColumn('number', "Min");
+            data.addColumn('number', "1stQ");
+            data.addColumn('number', "3rdQ");
+            data.addColumn('number', "Max");
+            data.addColumn({type:'string', role:'tooltip'});
+            data.addRow(['0100', 0.54, 17.27, 27.72, 102.49, 'Average Hourly Price $24.06']);
+            data.addRow(['0200', 0.01, 14.93, 25.27, 98.59, 'Average Hourly Price $22.06']);
+            data.addRow(['0300', 0.0, 13.19, 23.1, 95.52, 'Average Hourly Price $20.55']);
+            data.addRow(['0400', 0.0, 11.77, 21.96, 93.76, 'Average Hourly Price $19.70']);
+            data.addRow(['0500', 0.1, 12.83, 22.93, 96.89, 'Average Hourly Price $20.41']);
+            data.addRow(['0600', 5.1, 15.73, 26.47, 106.73, 'Average Hourly Price $23.18']);
+            data.addRow(['0700', 5.12, 18.96, 32.16, 122.95, 'Average Hourly Price $28.01']);
+            data.addRow(['0800', 3.01, 20.28, 25.35, 133.64, 'Average Hourly Price $29.85']);
+            data.addRow(['0900', 10.31, 21.54, 36.04, 111.24, 'Average Hourly Price $30.85']);
+            data.addRow(['1000', 12.6, 22.53, 36.94, 155.05, 'Average Hourly Price $32.57']);
+            data.addRow(['1100', 11.65, 23.02, 37.90, 98.15, 'Average Hourly Price $32.85']);
+            data.addRow(['1200', 11.62, 23.31, 39.62, 98.26, 'Average Hourly Price $33.71']);
+            data.addRow(['1300', 12.37, 22.41, 40.32, 106.16, 'Average Hourly Price $33.94']);
+            data.addRow(['1400', 11.3, 22.27, 41.15, 104.70, 'Average Hourly Price $34.47']);
+            data.addRow(['1500', 10.56, 21.53, 42.58, 109.17, 'Average Hourly Price $34.56']);
+            data.addRow(['1600', 10.54, 22.55, 43.24, 109.34, 'Average Hourly Price $35.53']);
+            data.addRow(['1700', 10.65, 23.92, 49.54, 113.70, 'Average Hourly Price $39.07']);
+            data.addRow(['1800', 13.86, 26.77, 57.09, 122.85, 'Average Hourly Price $43.96']);
+            data.addRow(['1900', 15.32, 27.50, 52.86, 115.41, 'Average Hourly Price $42.06']);
+            data.addRow(['2000', 16.05, 26.93, 46.83, 109.10, 'Average Hourly Price $39.05']);
+            data.addRow(['2100', 13.88, 24.49, 42.41, 110.56, 'Average Hourly Price $35.54']);
+            data.addRow(['2200', 12.60, 20.95, 35.78, 100.35, 'Average Hourly Price $30.29']);
+            data.addRow(['2300', 10.64, 18.40, 29.92, 92.26, 'Average Hourly Price $26.04']);
+            data.addRow(['2400', 8.33, 17.14, 26.47, 89.49, 'Average Hourly Price $23.89']);
+            var options = {
+                legend:'none',
+                title: 'Average Energy Prices by Hour',
+                hAxis: {title: 'Hour of Day'},
+                vAxis: {title: 'Price', minValue: 0, maxValue: 150}
+            };
+
+            var chart = new google.visualization.CandlestickChart(document.getElementById('PriceHourchart_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <div id="PriceHourchart_div" style="width: 900px; height: 500px;"></div>
+
+
+    <!-- Dashboard -->
+    <div class="w3-container" id="dashboard" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-indigo"><b>Dashboard</b></h1>
+    </div>
+    <p> Play with time periods and bid parameters to see how profitability changes. Bid price reflects how much it costs MIT to reduce energy.
         Bid amount is how much energy MIT can reduce.  </p>
     <h4>Select start date</h4>
     <input type="text" id="startDate" value="04/01/2016">
@@ -271,9 +254,9 @@ chart.draw(data, options);
     <h4>Insert a bid price ($/MW)</h4>
     <input type="number" id="BidPrice" value="20">
     <h4>Insert a bid amount (MW))</h4>
-    <input type ="number" id = "BidAmount" value = "1"> 
+    <input type ="number" id = "BidAmount" value = "1">
     <p> </p>
-    <button onclick="updateBid()">Update</button> 
+    <button onclick="updateBid()">Update</button>
     <div style="width: 900px; height: 75px"> </div>
     <p>See how MIT's bid price relates to ISO-NE's prices. </p>
     <div id="drawISONEPRicesChart_Div" style="width: 900px; height: 500px;"></div>
@@ -285,364 +268,351 @@ chart.draw(data, options);
     <div id="drawPriceUse_Div" style="width: 900px; height: 500px;"></div>
     <div>
         <h3> Total profit ($) of interval</h3>
-        </div>
+    </div>
     <div id ="IntervalProfit_Div" style="width: 900px; height: 50px;">Total Profit</div>
     <div>
         <h3> Total 2016 profit ($)</h3>
-        </div>
+    </div>
     <div id ="Total2016Profit_Div" style="width: 900px; height: 50px;">Total 2016 Profit</div>
     <script type="text/javascript">
-
-    //loading google charts
-    google.charts.load('current', { packages: ['corechart', 'line'] });
-    google.charts.setOnLoadCallback(drawISONEPRices);
-    google.charts.load('current', {packages: ['corechart', 'bar']});
-    google.charts.setOnLoadCallback(drawProfit);
-    google.charts.load('current', {'packages':['line', 'corechart']});
-    google.charts.setOnLoadCallback(drawPriceUse);
-//load the profit tallys
-window.onload = function(){
-    totalProfit();
-    total2016Profit();  
-}
-
-//Graph 1
-function drawISONEPRices() {
-    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
-    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
-
-    var PriceBidGraphableArray = rangeData.map(function (element) {
-        var intermediate = [];
-        intermediate.push(element[1] + '/' + element[2]);
-        intermediate.push(element[6]);
-        intermediate.push(BidPrice);
-        return intermediate;
-    });
-    PriceBidGraphableArray.unshift(['Time', 'DAM LMP', "Bid Price"]);
-    var gdata = google.visualization.arrayToDataTable(PriceBidGraphableArray);
-    var options = {
-        title: 'ISO-NE Price versus Bid Price',
-        vAxis: { title: 'LMP ($/MWh)' },
-        hAxis: { title: 'Time (Month/Day/Year/Hour)' },
-        seriesType: 'line',
-        series: { 1: { type: 'line' } }
-    }
-    var chart = new google.visualization.ComboChart(document.getElementById('drawISONEPRicesChart_Div'));
-    chart.draw(gdata, options);
-        }
-    
-//graph 2
-function drawProfit(){
-    var Profit = []; 
-    var Use = [];
-    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
-    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
-    rangeData.forEach(function(element) {
-        var profitIntermediate = {}; 
-        profitIntermediate.date = element[1];
-        profitIntermediate.time = element[2]+':00';
-        if(element[6]>=BidPrice){
-            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+        //loading google charts
+        google.charts.load('current', { packages: ['corechart', 'line'] });
+        google.charts.setOnLoadCallback(drawISONEPRices);
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawProfit);
+        google.charts.load('current', {'packages':['line', 'corechart']});
+        google.charts.setOnLoadCallback(drawPriceUse);
+        //load the profit tallys (Moved to Data Analysis window.onload)
+        // window.onload = function(){
+        //     totalProfit();
+        //     total2016Profit();
+        // }
+        //Graph 1
+        function drawISONEPRices() {
+            var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+            var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+            var PriceBidGraphableArray = rangeData.map(function (element) {
+                var intermediate = [];
+                intermediate.push(element[1] + '/' + element[2]);
+                intermediate.push(element[6]);
+                intermediate.push(BidPrice);
+                return intermediate;
+            });
+            PriceBidGraphableArray.unshift(['Time', 'DAM LMP', "Bid Price"]);
+            var gdata = google.visualization.arrayToDataTable(PriceBidGraphableArray);
+            var options = {
+                title: 'ISO-NE Price versus Bid Price',
+                vAxis: { title: 'LMP ($/MWh)' },
+                hAxis: { title: 'Time (Month/Day/Year/Hour)' },
+                seriesType: 'line',
+                series: { 1: { type: 'line' } }
             }
-        else{profitIntermediate.perUnitProfit= 0}
-    
-        Profit.push(profitIntermediate); 
-    });
-
-    useData.forEach(function(element){
-        var DataIntermediate = {};
-        if(element.time[3]== '0'){
-            DataIntermediate.date = element.date;
-            DataIntermediate.time = element.time; 
-                if(element.usage/1000 >= BidMW){
-                DataIntermediate.MWReduction= BidMW}
-                else{DataIntermediate.MWReduction = 0}
-            Use.push(DataIntermediate);
-            }
-        });  
-            
-    function mergeArrays(a,b){
-            arr=[];
-        a.forEach(function(element){
-            let c={}; 
-           b.forEach(function(thing){
-               if((element.date===thing.date)&&(element.time===thing.time)){
-                   c.date = thing.date;
-                   c.time = thing.time;
-                   c.profit = element.perUnitProfit*thing.MWReduction; 
-                   arr.push(c);
-               }
-                                 })
-                                }); 
-                            return arr;
-                            }; 
-    var joinedArray= mergeArrays(Profit, Use); 
-    var dateArry = [];
-    rangeData.forEach(function(element){
-    if(dateArry.indexOf(element[1])==-1){dateArry.push(element[1])}
-    }); 
-
-    var dailyArray = [];
-    var currentDate = joinedArray[0].date;
-    var currentEntry = {date:currentDate, profit:0}
-    joinedArray.forEach(function(elem){
-        if(elem.date == currentEntry.date){
-            currentEntry.profit += Number(elem.profit)
-        } else {
-            dailyArray.push([currentEntry.date,currentEntry.profit]);
-            currentEntry.date = elem.date;
-            currentEntry.profit = 0;
+            var chart = new google.visualization.ComboChart(document.getElementById('drawISONEPRicesChart_Div'));
+            chart.draw(gdata, options);
         }
-    });            
 
-    dailyArray.unshift(["Date","Profit"]); 
-        var data = new google.visualization.arrayToDataTable(dailyArray);
-        var options = {
-        title: 'Daily Profit',
-        hAxis: {
-          title: 'Day',
-                }, 
-        vAxis: {
-          title: 'Profit ($)'
+        //graph 2
+        function drawProfit(){
+            var Profit = [];
+            var Use = [];
+            var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+            var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+            rangeData.forEach(function(element) {
+                var profitIntermediate = {};
+                profitIntermediate.date = element[1];
+                profitIntermediate.time = element[2]+':00';
+                if(element[6]>=BidPrice){
+                    profitIntermediate.perUnitProfit= (element[6]-BidPrice)
                 }
+                else{profitIntermediate.perUnitProfit= 0}
+
+                Profit.push(profitIntermediate);
+            });
+            useData.forEach(function(element){
+                var DataIntermediate = {};
+                if(element.time[3]== '0'){
+                    DataIntermediate.date = element.date;
+                    DataIntermediate.time = element.time;
+                    if(element.usage/1000 >= BidMW){
+                        DataIntermediate.MWReduction= BidMW}
+                    else{DataIntermediate.MWReduction = 0}
+                    Use.push(DataIntermediate);
+                }
+            });
+
+            function mergeArrays(a,b){
+                arr=[];
+                a.forEach(function(element){
+                    let c={};
+                    b.forEach(function(thing){
+                        if((element.date===thing.date)&&(element.time===thing.time)){
+                            c.date = thing.date;
+                            c.time = thing.time;
+                            c.profit = element.perUnitProfit*thing.MWReduction;
+                            arr.push(c);
+                        }
+                    })
+                });
+                return arr;
+            };
+            var joinedArray= mergeArrays(Profit, Use);
+            var dateArry = [];
+            rangeData.forEach(function(element){
+                if(dateArry.indexOf(element[1])==-1){dateArry.push(element[1])}
+            });
+            var dailyArray = [];
+            var currentDate = joinedArray[0].date;
+            var currentEntry = {date:currentDate, profit:0}
+            joinedArray.forEach(function(elem){
+                if(elem.date == currentEntry.date){
+                    currentEntry.profit += Number(elem.profit)
+                } else {
+                    dailyArray.push([currentEntry.date,currentEntry.profit]);
+                    currentEntry.date = elem.date;
+                    currentEntry.profit = 0;
+                }
+            });
+            dailyArray.unshift(["Date","Profit"]);
+            var data = new google.visualization.arrayToDataTable(dailyArray);
+            var options = {
+                title: 'Daily Profit',
+                hAxis: {
+                    title: 'Day',
+                },
+                vAxis: {
+                    title: 'Profit ($)'
+                }
+            }
+            var chart = new google.visualization.ColumnChart(document.getElementById('drawProfitability_Div'));
+            chart.draw(data, options);
         }
-        var chart = new google.visualization.ColumnChart(document.getElementById('drawProfitability_Div'));
-        chart.draw(data, options);
-   }
-//graph 3  
-function drawPriceUse(){
-    var Price = []; 
-    var Use = [];
-    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
-    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
-
-    rangeData.forEach(function(element){
-        var arryIntermediate = {}; 
-        arryIntermediate.date = element[1];
-        arryIntermediate.time = element[2]+':00';
-        arryIntermediate.price = element[6]; 
-        Price.push(arryIntermediate); 
-    });
-    useData.forEach(function(element){
-        var DataIntermediate = {};
-        if(element.time[3]== '0'){
-            DataIntermediate.date = element.date;
-            DataIntermediate.time = element.time; 
-            DataIntermediate.MITUse = element.usage/1000; 
-            Use.push(DataIntermediate);
-            }
-        });  
-
-        function mergeArrays(a,b){
-            arr=[];
-        a.forEach(function(element){
-            let c={}; 
-           b.forEach(function(thing){
-               if((element.date===thing.date)&&(element.time===thing.time)){
-                   c.date = thing.date;
-                   c.time = thing.time;
-                   c.price = element.price;
-                   c.use = thing.MITUse;  
-                   arr.push(c);
-               }
-                                 })
-                                }); 
-                            return arr;
-                            }; 
-    var joinedArray= mergeArrays(Price, Use);
-    var graphThisArry = []; 
-    joinedArray.forEach(function(element){
-        var x = element.date + '/'+ element.time;
-        var y = element.price;
-        var z = element.use; 
-        graphThisArry.push([x,y,z]); 
-    });  
-    graphThisArry.unshift(["Date/Time",'ISO-NE Price ($/MWh)','MIT Use (MW)']); 
-
-    var data = new google.visualization.arrayToDataTable(graphThisArry);
-    var options = {
-        chart: {
-          title: 'ISO-NE Price ($/MWh) versus MIT Consumption (MW)'
-        },
-        series: {
-          0: {axis: 'YYY'},
-          1: {axis: 'ZZZ'}
-        },
-        axes: {
-          y: {
-            YYY: {label: 'ISO-NE Price ($/MWh)'},
-            ZZZ: {label: 'MIT Consumption (MW)'}
-          }
+        //graph 3
+        function drawPriceUse(){
+            var Price = [];
+            var Use = [];
+            var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+            var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+            rangeData.forEach(function(element){
+                var arryIntermediate = {};
+                arryIntermediate.date = element[1];
+                arryIntermediate.time = element[2]+':00';
+                arryIntermediate.price = element[6];
+                Price.push(arryIntermediate);
+            });
+            useData.forEach(function(element){
+                var DataIntermediate = {};
+                if(element.time[3]== '0'){
+                    DataIntermediate.date = element.date;
+                    DataIntermediate.time = element.time;
+                    DataIntermediate.MITUse = element.usage/1000;
+                    Use.push(DataIntermediate);
+                }
+            });
+            function mergeArrays(a,b){
+                arr=[];
+                a.forEach(function(element){
+                    let c={};
+                    b.forEach(function(thing){
+                        if((element.date===thing.date)&&(element.time===thing.time)){
+                            c.date = thing.date;
+                            c.time = thing.time;
+                            c.price = element.price;
+                            c.use = thing.MITUse;
+                            arr.push(c);
+                        }
+                    })
+                });
+                return arr;
+            };
+            var joinedArray= mergeArrays(Price, Use);
+            var graphThisArry = [];
+            joinedArray.forEach(function(element){
+                var x = element.date + '/'+ element.time;
+                var y = element.price;
+                var z = element.use;
+                graphThisArry.push([x,y,z]);
+            });
+            graphThisArry.unshift(["Date/Time",'ISO-NE Price ($/MWh)','MIT Use (MW)']);
+            var data = new google.visualization.arrayToDataTable(graphThisArry);
+            var options = {
+                chart: {
+                    title: 'ISO-NE Price ($/MWh) versus MIT Consumption (MW)'
+                },
+                series: {
+                    0: {axis: 'YYY'},
+                    1: {axis: 'ZZZ'}
+                },
+                axes: {
+                    y: {
+                        YYY: {label: 'ISO-NE Price ($/MWh)'},
+                        ZZZ: {label: 'MIT Consumption (MW)'}
+                    }
+                }
+            };
+            var Chart = new google.charts.Line(drawPriceUse_Div);
+            Chart.draw(data, options);
         }
-    }; 
-    var Chart = new google.charts.Line(drawPriceUse_Div);
-    Chart.draw(data, options);
-}
-//this is the total profit for the interval
-function totalProfit(){
-    var Profit = []; 
-    var Use = [];
-    var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
-    var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
-    rangeData.forEach(function(element) {
-        var profitIntermediate = {}; 
-        profitIntermediate.date = element[1];
-        profitIntermediate.time = element[2]+':00';
-        if(element[6]>=BidPrice){
-            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
-            }
-        else{profitIntermediate.perUnitProfit= 0}
-    
-        Profit.push(profitIntermediate); 
-    });
+        //this is the total profit for the interval
+        function totalProfit(){
+            var Profit = [];
+            var Use = [];
+            var rangeData = getDataFromRange($('#startDate').val(),$('#endDate').val());
+            var useData = getUsageFromRange($('#startDate').val(),$('#endDate').val());
+            rangeData.forEach(function(element) {
+                var profitIntermediate = {};
+                profitIntermediate.date = element[1];
+                profitIntermediate.time = element[2]+':00';
+                if(element[6]>=BidPrice){
+                    profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+                }
+                else{profitIntermediate.perUnitProfit= 0}
 
-    useData.forEach(function(element){
-        var DataIntermediate = {};
-        if(element.time[3]== '0'){
-            DataIntermediate.date = element.date;
-            DataIntermediate.time = element.time; 
-                if(element.usage/1000 >= BidMW){
-                DataIntermediate.MWReduction= BidMW}
-                else{DataIntermediate.MWReduction = 0}
-            Use.push(DataIntermediate);
-            }
-        });  
-            
-    function mergeArrays(a,b){
-            arr=[];
-        a.forEach(function(element){
-            let c={}; 
-           b.forEach(function(thing){
-               if((element.date===thing.date)&&(element.time===thing.time)){
-                   c.date = thing.date;
-                   c.time = thing.time;
-                   c.profit = element.perUnitProfit*thing.MWReduction; 
-                   arr.push(c);
-               }
-                                 })
-                                }); 
-                            return arr;
-                            }; 
-    var joinedArray= mergeArrays(Profit, Use); 
-    console.log('this should be just the profit of the interval'); 
-    var totalProfit = joinedArray.reduce(function(accum, current){
-    return accum + current.profit;  
-},0); 
-    console.log(totalProfit); 
-    document.getElementById("IntervalProfit_Div").innerHTML = String(totalProfit.toFixed(2)); 
-}
-//this is the total profit for 2016 
-function total2016Profit(){
-    var Profit = []; 
-    var Use = [];
-    ALLDATA.forEach(function(element) {
-        var profitIntermediate = {}; 
-        profitIntermediate.date = element[1];
-        profitIntermediate.time = element[2]+':00';
-        if(element[6]>=BidPrice){
-            profitIntermediate.perUnitProfit= (element[6]-BidPrice)
-            }
-        else{profitIntermediate.perUnitProfit= 0}
-    
-        Profit.push(profitIntermediate); 
-    });
-    MITDATA.forEach(function(element){
-        var DataIntermediate = {};
-        if(element.time[3]== '0'){
-            DataIntermediate.date = element.date;
-            DataIntermediate.time = element.time; 
-                if(element.usage/1000 >= BidMW){
-                DataIntermediate.MWReduction= BidMW}
-                else{DataIntermediate.MWReduction = 0}
-            Use.push(DataIntermediate);
-            }
-        });      
-    function mergeArrays(a,b){
-            arr=[];
-        a.forEach(function(element){
-            let c={}; 
-           b.forEach(function(thing){
-               if((element.date===thing.date)&&(element.time===thing.time)){
-                   c.date = thing.date;
-                   c.time = thing.time;
-                   c.profit = element.perUnitProfit*thing.MWReduction; 
-                   arr.push(c);
-               }
-                                 })
-                                }); 
-                            return arr;
-                            }; 
-    var joinedArray= mergeArrays(Profit, Use); 
-    console.log('total 2016 profit'); 
-    var totalProfit = joinedArray.reduce(function(accum, current){
-    return accum + current.profit;  
-},0); 
-    console.log(totalProfit); 
-    document.getElementById("Total2016Profit_Div").innerHTML = String(totalProfit.toFixed(2)); 
-}
+                Profit.push(profitIntermediate);
+            });
+            useData.forEach(function(element){
+                var DataIntermediate = {};
+                if(element.time[3]== '0'){
+                    DataIntermediate.date = element.date;
+                    DataIntermediate.time = element.time;
+                    if(element.usage/1000 >= BidMW){
+                        DataIntermediate.MWReduction= BidMW}
+                    else{DataIntermediate.MWReduction = 0}
+                    Use.push(DataIntermediate);
+                }
+            });
 
+            function mergeArrays(a,b){
+                arr=[];
+                a.forEach(function(element){
+                    let c={};
+                    b.forEach(function(thing){
+                        if((element.date===thing.date)&&(element.time===thing.time)){
+                            c.date = thing.date;
+                            c.time = thing.time;
+                            c.profit = element.perUnitProfit*thing.MWReduction;
+                            arr.push(c);
+                        }
+                    })
+                });
+                return arr;
+            };
+            var joinedArray= mergeArrays(Profit, Use);
+            console.log('this should be just the profit of the interval');
+            var totalProfit = joinedArray.reduce(function(accum, current){
+                return accum + current.profit;
+            },0);
+            console.log(totalProfit);
+            document.getElementById("IntervalProfit_Div").innerHTML = String(totalProfit.toFixed(2));
+        }
+        //this is the total profit for 2016
+        function total2016Profit(){
+            var Profit = [];
+            var Use = [];
+            ALLDATA.forEach(function(element) {
+                var profitIntermediate = {};
+                profitIntermediate.date = element[1];
+                profitIntermediate.time = element[2]+':00';
+                if(element[6]>=BidPrice){
+                    profitIntermediate.perUnitProfit= (element[6]-BidPrice)
+                }
+                else{profitIntermediate.perUnitProfit= 0}
+
+                Profit.push(profitIntermediate);
+            });
+            MITDATA.forEach(function(element){
+                var DataIntermediate = {};
+                if(element.time[3]== '0'){
+                    DataIntermediate.date = element.date;
+                    DataIntermediate.time = element.time;
+                    if(element.usage/1000 >= BidMW){
+                        DataIntermediate.MWReduction= BidMW}
+                    else{DataIntermediate.MWReduction = 0}
+                    Use.push(DataIntermediate);
+                }
+            });
+            function mergeArrays(a,b){
+                arr=[];
+                a.forEach(function(element){
+                    let c={};
+                    b.forEach(function(thing){
+                        if((element.date===thing.date)&&(element.time===thing.time)){
+                            c.date = thing.date;
+                            c.time = thing.time;
+                            c.profit = element.perUnitProfit*thing.MWReduction;
+                            arr.push(c);
+                        }
+                    })
+                });
+                return arr;
+            };
+            var joinedArray= mergeArrays(Profit, Use);
+            console.log('total 2016 profit');
+            var totalProfit = joinedArray.reduce(function(accum, current){
+                return accum + current.profit;
+            },0);
+            console.log(totalProfit);
+            document.getElementById("Total2016Profit_Div").innerHTML = String(totalProfit.toFixed(2));
+        }
     </script>
-  <a href="dash/run.html" style="font-size:1.2em;">Click to View Live Dashboard</a>
- <!-- Team -->
- <div class="w3-container" id="team" style="margin-top:75px">
+
+    <!-- Team -->
+    <div class="w3-container" id="team" style="margin-top:75px">
         <h1 class="w3-xxxlarge w3-text-indigo"><b>Team</b></h1>
         <p>We are a team of MIT graduate students from diverse backgrounds seeking to learn more about MIT's opportunities to become energy efficient.</p>
-        </div>
-      <!-- The Team -->
-      <div class="w3-row-padding w3-grayscale">
-         <div class="w3-col m4 w3-margin-bottom">
-          <div class="w3-light-grey">
-            <img src="nette2.jpg" alt="Annette" style="width:50%">
-            <div class="w3-container">
-              <h3>Annette Brocks</h3>
-                <p>Annette is a first year graduate student in the Technology and Policy Program.</p>
+    </div>
+    <!-- The Team -->
+    <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+                <img src="nette2.jpg" alt="Annette" style="width:50%">
+                <div class="w3-container">
+                    <h3>Annette Brocks</h3>
+                    <p>Annette is a first year graduate student in the Technology and Policy Program.</p>
+                </div>
             </div>
-          </div>
         </div>
         <div class="w3-col m4 w3-margin-bottom">
-          <div class="w3-light-grey">
-            <img src="dave.png" alt="Dave" style="width:50%">
-            <div class="w3-container">
-              <h3>David Garufi</h3>
-                <p>Dave is a second year graduate student in the System Design and Management program.</p>
+            <div class="w3-light-grey">
+                <img src="dave.png" alt="Dave" style="width:50%">
+                <div class="w3-container">
+                    <h3>David Garufi</h3>
+                    <p>Dave is a second year graduate student in the System Design and Management program.</p>
+                </div>
             </div>
-          </div>
         </div>
         <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
-                  <img src="dj2.jpg" alt="Delbert" style="width:50%">
-                  <div class="w3-container">
+            <div class="w3-light-grey">
+                <img src="dj2.jpg" alt="Delbert" style="width:50%">
+                <div class="w3-container">
                     <h3>Delbert Joo</h3>
                     <p>Delbert is a second year graduate student in the System Design and Management program. </p>
-                  </div>
                 </div>
-              </div>
-      </div>
+            </div>
+        </div>
+    </div>
 
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">1.001 Final Project</p></div>
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">1.001 Final Project</p></div>
 
-<script>
-    $( "#startDate" ).datepicker({dateFormat: "mm/dd/yy"});
-    $( "#endDate" ).datepicker({dateFormat: "mm/dd/yy"});
-
-    // Function to get data within time range
-    function getDataFromRange(startDate, endDate){
-        // Set default values
-        startDate   = startDate || $('#startDate').val();
-        endDate     = endDate || $('#endDate').val();
-        // Filter data
-        return ALLDATA.filter(o => o[1] >= startDate && o[1] <= endDate);
-    }
-
-    // Function to get data within time range
-    function getUsageFromRange(startDate, endDate){
-        // Set default values
-        startDate   = startDate || $('#startDate').val();
-        endDate     = endDate || $('#endDate').val();
-        // Filter data
-        return MITDATA.filter(o => o.date >= startDate && o.date <= endDate);
-    }
-</script>
+    <script>
+        $( "#startDate" ).datepicker({dateFormat: "mm/dd/yy"});
+        $( "#endDate" ).datepicker({dateFormat: "mm/dd/yy"});
+        // Function to get data within time range
+        function getDataFromRange(startDate, endDate){
+            // Set default values
+            startDate   = startDate || $('#startDate').val();
+            endDate     = endDate || $('#endDate').val();
+            // Filter data
+            return ALLDATA.filter(o => o[1] >= startDate && o[1] <= endDate);
+        }
+        // Function to get data within time range
+        function getUsageFromRange(startDate, endDate){
+            // Set default values
+            startDate   = startDate || $('#startDate').val();
+            endDate     = endDate || $('#endDate').val();
+            // Filter data
+            return MITDATA.filter(o => o.date >= startDate && o.date <= endDate);
+        }
+    </script>
 
 </body>
 </html>
